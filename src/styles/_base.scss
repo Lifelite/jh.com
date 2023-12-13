@@ -1,0 +1,19 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #ffaf1b;
+$secondary-color: #00ffff;
+$passive-color: #cecece;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: #000000;
+}
+
+.secondary {
+  color: $secondary-color;
+}
+
+.passive {
+  color: $passive-color;
+}
+

@@ -1,0 +1,6 @@
+.body {
+    background-image: url(../images/stars.png);
+    background-color: #ffaf1b;
+    position: absolute;
+    background-size: cover;
+}

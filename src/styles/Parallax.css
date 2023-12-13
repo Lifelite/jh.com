@@ -1,0 +1,81 @@
+
+body {
+    margin: 0;
+    font-family:Helvetica,Sans-serif;
+    overflow-x:hidden;
+}
+h1 {
+    text-align:center;
+}
+.parallax {
+    width:100vw;
+    height:100vh;
+    perspective:1px;
+    perspective-origin: center center;
+    overflow-x:hidden;
+}
+.intro {
+    position:absolute;
+    width:100vw;
+    height:80vh;
+    top:100vh;
+    background-color: rgba(255, 255, 255, 0);
+}
+#parallax-layer-div {
+    transform-style: preserve-3d;
+    height:120vh;
+}
+
+.parralax-layer {
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    position: absolute;
+    max-height: 100vh;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+
+#starback {
+    background-image: url(../images/stars.png);
+    background-color: #ffaf1b;
+    background-repeat: repeat-y;
+    transform:translate3d(0px,0px,-1.3px) scale(2.5);
+}
+#deathstar {
+    background-image: url(../images/deathstar.png);
+    transform:translate3d(200px,-105px,-1px) scale(1.8);
+}
+#name {
+    background-image: url(../images/name.png);
+    transform:translate3d(0,0px,0.26px) scale(0.6);
+    background-position: center;
+}
+#enterprise {
+    background-image: url(../images/enterprise.png);
+    transform:translate3d(0,0px,-.9px) scale(1.5);
+    background-position: left;
+}
+#atlantabackground {
+    background-image: url(../images/atlantabackground.png);
+    transform:translate3d(0px, 120px,.5px) scale(.6);
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+#jeremy {
+    background-image: url(../images/jeremy.png);
+    transform:translate3d(0px,160px,.38px) scale(0.65);
+    background-size: cover;
+}
+#atlantaforeground {
+    background-image: url(../images/atlantaforeground.png);
+    transform:translate3d(0, -100px,.2px) scale(1.4);
+}
+
+#transitionblock {
+    background-color: #000000;
+    background-size: contain;
+    transform:translate3d(0,81vh, .45px) scale(0.9);
+}
