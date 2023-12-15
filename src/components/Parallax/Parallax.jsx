@@ -1,6 +1,7 @@
 import '../../styles/parallax.scss'
 import {TextBlock} from "./TextBlock.jsx";
-import ScollInFade from "../ScrollFadeIn.jsx";
+import ScrollInFade from "../ScrollFadeIn.jsx";
+import Button from "../Button.jsx";
 
 export function Parallax() {
 
@@ -17,12 +18,12 @@ export function Parallax() {
                 <div className="parralax-layer" id="starback"></div>
             </div>
             <div className="intro">
-                <ScollInFade>
+                <ScrollInFade>
                     <TextBlock color="primary" size="large">
                         Hi, I'm Jeremy Huntsman...
                     </TextBlock>
-                </ScollInFade>
-                <ScollInFade>
+                </ScrollInFade>
+                <ScrollInFade>
                     <div className="intro-body">
                         <TextBlock color="primary" size="h2" weight="normal">
                             A Quality Engineer by profession, with a passion for creating and problem-solving deeply
@@ -49,8 +50,14 @@ export function Parallax() {
                             all, I am fueled by a love for continuous learning.
                         </TextBlock>
                     </div>
-                </ScollInFade>
+                </ScrollInFade>
+                <ScrollInFade>
+                <div className="button-cluster">
+                    <Button>Learn More</Button>
+                </div>
+                </ScrollInFade>
             </div>
+
         </div>
     )
 }
