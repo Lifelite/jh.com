@@ -15,5 +15,7 @@
 @media only screen and (max-width: 800px) {
   .fade-in-section {
     visibility: visible;
+    opacity: 1;
+    transform: none;
   }
 }
