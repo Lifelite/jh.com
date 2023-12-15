@@ -52,9 +52,9 @@ export function Parallax() {
                     </div>
                 </ScrollInFade>
                 <ScrollInFade>
-                <div className="button-cluster">
-                    <Button>Learn More</Button>
-                </div>
+                    <div className="button-cluster">
+                        <Button>Learn More</Button>
+                    </div>
                 </ScrollInFade>
             </div>
 
