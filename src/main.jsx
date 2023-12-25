@@ -8,6 +8,7 @@ import "./styles/_base.scss";
 import ErrorPage from "./routes/error-page.jsx";
 
 import Root from "./routes/root.jsx";
+import {Home} from "./pages/Home.jsx";
 
 const router = createBrowserRouter([
     {
@@ -15,8 +16,18 @@ const router = createBrowserRouter([
         element: <Root/>,
         errorElement: <ErrorPage/>,
         // loader: rootLoader,
-        children: []
+        // children: [
+        //     {
+        //         path: "/home",
+        //         element: <Home />,
+        //     }
+        // ]
     },
+    {
+        path: "/home",
+        element: <Home />,
+        errorElement: <ErrorPage />
+    }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

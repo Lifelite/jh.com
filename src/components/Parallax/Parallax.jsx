@@ -1,9 +1,16 @@
-import '../../styles/parallax.scss'
+import '../../styles/Parallax.scss'
 import {TextBlock} from "./TextBlock.jsx";
 import ScrollInFade from "../ScrollFadeIn.jsx";
 import Button from "../Button.jsx";
+import {Navigate, useNavigate} from "react-router-dom";
 
 export function Parallax() {
+
+    const navigate = useNavigate()
+    const handleClick = () => {
+        // add page transition
+        navigate("/home")
+    }
 
     return (
         <div className="parallax">
@@ -53,7 +60,7 @@ export function Parallax() {
                 </ScrollInFade>
                 <ScrollInFade>
                     <div className="button-cluster">
-                        <Button>Learn More</Button>
+                        <Button onClick={handleClick}>Enter</Button>
                     </div>
                 </ScrollInFade>
             </div>
