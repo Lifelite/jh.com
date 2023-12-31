@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import '../styles/button.scss'
+import '../styles/Button.scss'
 
 export default function Button(props) {
     const {
