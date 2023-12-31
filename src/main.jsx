@@ -6,9 +6,13 @@ import {
 } from "react-router-dom";
 import "./styles/_base.scss";
 import ErrorPage from "./routes/error-page.jsx";
-
 import Root from "./routes/root.jsx";
-import {Home} from "./pages/Home.jsx";
+import {Professional} from "./pages/Professional.jsx";
+import {Personal} from "./pages/Personal.jsx";
+import {Contact} from "./pages/Contact.jsx";
+import { inject } from '@vercel/analytics';
+
+inject();
 
 const router = createBrowserRouter([
     {
@@ -24,8 +28,18 @@ const router = createBrowserRouter([
         // ]
     },
     {
-        path: "/home",
-        element: <Home />,
+        path:"/personal",
+        element:<Personal />,
+        errorElement: <ErrorPage />
+    },
+    {
+        path: "/professional",
+        element: <Professional />,
+        errorElement: <ErrorPage />
+    },
+    {
+        path: "/contact",
+        element: <Contact />,
         errorElement: <ErrorPage />
     }
 ]);

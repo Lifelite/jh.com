@@ -79,7 +79,7 @@ const Hamburger = (props) => {
             <div ref={el => (reveal2 = el)} className='menu-layer'>
                 <div
                     ref={el => (optionBackground = el)}
-                    className='menu-city-background'></div>
+                    className='menu-option-background'></div>
                 <div className='container'>
                     <div className='wrapper'>
                         <div className='menu-links'>
@@ -115,21 +115,19 @@ const Hamburger = (props) => {
                                 </ul>
                             </nav>
                             <div ref={el => (info = el)} className='info'>
-                                <h3>Lorem Ipsum</h3>
+                                <h3>About this site...</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum
-                                    fermentum est, sit amet fermentum sapien feugiat ut.
-                                    Ut orci lacus, efficitur quis dui sed, congue venenatis massa.
-                                    Aenean ultricies urna nec elementum efficitur. Nam a malesuada nulla, eget eleifend
-                                    mauris.
-                                    Cras elit nisl, facilisis sit amet molestie quis, consectetur sit amet felis.
-                                    Suspendisse blandit id mauris ut auctor. Curabitur nec purus turpis.
+                                    While this site is partially to showcase my skillset, it's also my playground.
+                                    It will be continuously updated and improved from what you see today.  Some call it
+                                    "scope-creep", I prefer to call it "being Agile".
+                                    Any "bugs" found on this website are actually features, obviously.
                                 </p>
                             </div>
-                            <div className='locations'>
+                            <div className='options'>
                                 Other Links:
                                 {other.map(el => (
                                     <Link
+                                        className="options-item"
                                         to={el.url}
                                         key={el.name}
                                         onMouseEnter={() => handleOption(el.image, optionBackground)}

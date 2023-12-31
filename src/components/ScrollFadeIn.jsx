@@ -7,7 +7,7 @@ export default function ScollInFade(props) {
         children
     } = props
 
-    const [isVisible, setVisible] = useState(true);
+    const [isVisible, setVisible] = useState(false);
     const domRef = useRef();
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {

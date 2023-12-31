@@ -70,11 +70,11 @@ export const handleHoverExit = e => {
     });
 };
 
-// adds city image once you hover on
-export const handleOption = (city, target) => {
+// adds image once you hover on
+export const handleOption = (option, target) => {
     gsap.to(target, {
         duration: 0,
-        background: `url(${city}) center center`
+        background: `url(${option}) center center`
     });
     gsap.to(target, {
         duration: 0.4,
@@ -88,7 +88,7 @@ export const handleOption = (city, target) => {
     });
 };
 
-// Removes the city image once you hover off
+// Removes the image once you hover off
 export const handleOptionReturn = target => {
     gsap.to(target, {
         duration: 0,

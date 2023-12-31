@@ -1,9 +1,7 @@
-import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Hamburger from "./Hamburger.jsx";
-import PropTypes from "prop-types";
 import "../styles/NavBar.scss"
-import withRouter from "../functions/withRouter.jsx"
 
 const NavBar = () => {
 

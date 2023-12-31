@@ -2,14 +2,24 @@ import '../../styles/Parallax.scss'
 import {TextBlock} from "./TextBlock.jsx";
 import ScrollInFade from "../ScrollFadeIn.jsx";
 import Button from "../Button.jsx";
-import {Navigate, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 export function Parallax() {
 
     const navigate = useNavigate()
-    const handleClick = () => {
+    const handleClick = (e) => {
+
+        switch (e.target.id) {
+            case "professional": navigate("/professional");
+            // eslint-disable-next-line no-fallthrough
+            case "personal": navigate("/personal");
+            // eslint-disable-next-line no-fallthrough
+            case "contact": navigate("/contact");
+            // eslint-disable-next-line no-fallthrough
+            default: navigate("/professional")
+        }
         // add page transition
-        navigate("/home")
+        navigate("/professional")
     }
 
     return (
@@ -33,34 +43,23 @@ export function Parallax() {
                 <ScrollInFade>
                     <div className="intro-body">
                         <TextBlock color="primary" size="h2" weight="normal">
-                            A Quality Engineer by profession, with a passion for creating and problem-solving deeply
-                            ingrained in my heart.
-
-                            Whether you stumbled upon this website via LinkedIn, social media, or by sheer chance, I
-                            extend
-                            a warm welcome!
+                            a man of many talents and hobbies, but a Lead Quality Engineer by trade.
                         </TextBlock>
                         <TextBlock color="primary" size="h2" weight="normal">
-                            I am currently employed as a Quality Engineer at Arvest Bank, and my enthusiasm for
-                            crafting,
-                            constructing, and tackling challenges extends beyond the confines of my professional life
-                            into
-                            my personal pursuits.
+                            This website serves as a place to house my project portfolio, showcase my
+                            resume, and overall just provide a window into my life and career.
                         </TextBlock>
                         <TextBlock color="primary" size="h2" weight="normal">
-                            This website serves as both a resume and a testament to my professional
-                            skills. I aspire not merely to be a Quality Engineer or a Developer but to transcend these
-                            roles.
-
-                            My ardor lies in building, creating, and devising solutions for intricate problems, but
-                            above
-                            all, I am fueled by a love for continuous learning.
+                            I plan on consistently updating and improving this website as I learn and experiment
+                            more with full stack development.  Thanks for stopping by!
                         </TextBlock>
                     </div>
                 </ScrollInFade>
                 <ScrollInFade>
                     <div className="button-cluster">
-                        <Button onClick={handleClick}>Enter</Button>
+                        <Button id="professional" onClick={handleClick}>Professional</Button>
+                        <Button id="personal" onClick={handleClick}>Personal</Button>
+                        <Button id="contact" onClick={handleClick}>Contact Me</Button>
                     </div>
                 </ScrollInFade>
             </div>

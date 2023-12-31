@@ -1,28 +1,18 @@
 import NavBar from "../components/NavBar.jsx"
 import "../styles/home.scss";
+import {useState} from "react";
 export const Home = () => {
 
+    const [view, setView] = useState("home")
 
     return (
         <>
             <NavBar />
-            <div className="title">
+            <div className="viewport">
 
             </div>
 
-            <div className="skills">
-                <div className="skillitem">
 
-                </div>
-
-            </div>
-            <div className="portfolio">
-
-            </div>
-            <div className="contact">
-
-            </div>
-            Page under construction
         </>
     )
 }
