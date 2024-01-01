@@ -83,7 +83,7 @@ $black: #000000;
   box-sizing: content-box;
 }
 .entry .body {
-  margin: 0 0 3em;
+  margin: 0 0 10em;
   float: right;
   width: 66%;
   color: $primary-color;
@@ -148,7 +148,7 @@ $black: #000000;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   /* For mobile phones: */
   .entry .title {
     float: left;

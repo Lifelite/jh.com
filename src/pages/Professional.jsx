@@ -1,26 +1,31 @@
 import Timeline from "../components/Timeline/Timeline.jsx";
-import TimelineItem from "../components/Timeline/TimelineItem.jsx";
+import {TimelineEntries} from "../content/TimelineEntries.jsx";
+import "../styles/professional.scss"
+import {HeroHeader} from "../components/HeroHeader/HeroHeader.jsx";
+import neoncity from "../images/neoncity.jpeg"
 
 export function Professional() {
 
-    
 
     return (
-        <>
-            <div className="professional-title">
-                Jeremy Huntsman - Lead Quality Engineer
+        <div className="professional">
+            <div className="professional-hero">
+                <HeroHeader
+                    title="Jeremy Hunstman"
+                    subtitle="Lead Quality Engineer"
+                    bubbleLife={20}
+                    bubbleCount={100}
+                    background={`url(${neoncity})`}
+                />
             </div>
-            <Timeline>
-                <TimelineItem dateText="May 2011 - January 2021">
-                    Test
-                </TimelineItem>
-                <TimelineItem dateText="January 2021 - July 2022">
-                    Test
-                </TimelineItem>
-                <TimelineItem dateText="July 2022 - Present">
-                    Test
-                </TimelineItem>
-            </Timeline>
-        </>
+            <div className="professional-resume">
+                <div className="professional-title">
+                    Career Timeline
+                </div>
+                <Timeline lineColor="#ffaf1b">
+                    <TimelineEntries/>
+                </Timeline>
+            </div>
+        </div>
     )
 }

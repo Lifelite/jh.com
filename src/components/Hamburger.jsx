@@ -35,7 +35,7 @@ const Hamburger = (props) => {
     } = props
 
 
-    // Create varibles of our dom nodes
+    // Create variables of dom nodes
     let menuLayer = useRef(null);
     let reveal1 = useRef(null);
     let reveal2 = useRef(null);
@@ -81,7 +81,7 @@ const Hamburger = (props) => {
                     ref={el => (optionBackground = el)}
                     className='menu-option-background'></div>
                 <div className='container'>
-                    <div className='wrapper'>
+                    <div className='hero_wrapper'>
                         <div className='menu-links'>
                             <nav>
                                 <ul>

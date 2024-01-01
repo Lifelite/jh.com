@@ -54,8 +54,8 @@ const NavBar = () => {
 
     return (
         <header>
-            <div className="container">
-                <div className="wrapper">
+            <div className="nav_container">
+                <div className="nav_wrapper">
                     <div className="inner-header">
                         <div className="logo">
                             <Link to="/">JH</Link>

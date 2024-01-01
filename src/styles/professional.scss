@@ -1,0 +1,43 @@
+$primary-color: #ffaf1b;
+
+.professional {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  .professional-resume {
+      display: flex;
+      flex-direction: inherit;
+      justify-content: inherit;
+      align-content: inherit;
+      align-self: center;
+      background-color: #1a1a1a;
+    width: 100vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+}
+
+.professional-hero {
+  width: 100vw;
+  height: 90vh;
+  z-index: -1;
+  position: sticky;
+  top: 0;
+}
+
+.professional-title {
+  align-self: center;
+  border-radius: 1em;
+  height: 10vh;
+  width: 70vw;
+  background-color: $primary-color;
+  color: #1a1a1a;
+  text-align: center;
+  padding-top: 5vh;
+  font-size: xx-large;
+  font-weight: bolder;
+  text-size-adjust: 20%;
+}
