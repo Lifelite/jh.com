@@ -11,11 +11,11 @@ body {
   Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.container {
+.nav_container {
   width: 100vw;
   margin: 0 auto;
   background-color: $primary-color;
-  .wrapper {
+  .nav_wrapper {
     padding: 0 48px;
     .home {
       display: flex;
@@ -105,7 +105,7 @@ header {
         animation-duration: 30s;
         animation-iteration-count: infinite;
       }
-      .wrapper {
+      .nav_wrapper {
         position: relative;
         .menu-links {
           display: flex;
