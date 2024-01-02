@@ -24,7 +24,7 @@ export function Parallax() {
 
     return (
         <div className="parallax">
-            <div className="hero" id="parallax-layer-div">
+            <div className="parralax-wrapper" id="parallax-layer-div">
                 <div className="parralax-layer" id="transitionblock"></div>
                 <div className="parralax-layer" id="atlantabackground"></div>
                 <div className="parralax-layer" id="jeremy"></div>

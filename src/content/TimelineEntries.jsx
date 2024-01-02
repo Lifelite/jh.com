@@ -1,4 +1,5 @@
 import TimelineItem from "../components/Timeline/TimelineItem.jsx";
+import {Fragment} from "react";
 
 export const TimelineEntries = () => {
     return (
@@ -100,6 +101,31 @@ export const TimelineEntries = () => {
                 <p>
                     Test lead on projects, including: EMV integration, API, PCI Compliance, POS Hardware,
                     and many more.
+                </p>
+            </TimelineItem>
+            <TimelineItem
+                key="005"
+                dateText="May 2011 - Dec 2014"
+                dateInnerStyle={{ background: '#ffc306', color: '#000000' }}
+                bodyContainerStyle={{
+                    background: 'rgba(105,105,105,0.44)',
+                    padding: '20px',
+                    borderRadius: '8px',
+                    boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+                }}
+            >
+                <h3>Technical Project Manager</h3>
+                <h4>ABC Financial Services (Now known as ABC Fitness)</h4>
+                <p>
+                    A role that was a balance between a support role for specialty systems, such as
+                    Access Control Systems, User Facing Kiosks, and others; VIP Client relations, and implementation projects.
+                </p>
+                <p>
+                    Job duties included overseeing large scale implementation of new products, assisting VIP
+                    clients, troubleshooting "impossible" issues, and working with Software Development to test,
+                    prototype, and integrate solutions with a focus on Hardware.  Being on a very small team, we
+                    are known as the "miracle workers" of the business... finding solutions to problems using any means
+                    available.
                 </p>
             </TimelineItem>
         </>

@@ -11,7 +11,7 @@ export function Professional() {
         <div className="professional">
             <div className="professional-hero">
                 <HeroHeader
-                    title="Jeremy Hunstman"
+                    title="Jeremy Huntsman"
                     subtitle="Lead Quality Engineer"
                     bubbleLife={20}
                     bubbleCount={100}
@@ -25,6 +25,9 @@ export function Professional() {
                 <Timeline lineColor="#ffaf1b">
                     <TimelineEntries/>
                 </Timeline>
+                <div className="professional-education">
+                    
+                </div>
             </div>
         </div>
     )
