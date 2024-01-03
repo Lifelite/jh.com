@@ -115,10 +115,10 @@ header {
           top: 200px;
           nav {
             display: block;
-            ul {
+            .menu-links-list {
               margin: 0;
               padding: 0;
-              li {
+              .menu-links-list-item {
                 list-style: none;
                 font-size: 6rem;
                 font-weight: 700;

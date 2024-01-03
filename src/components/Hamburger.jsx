@@ -80,12 +80,12 @@ const Hamburger = (props) => {
                 <div
                     ref={el => (optionBackground = el)}
                     className='menu-option-background'></div>
-                <div className='container'>
-                    <div className='hero_wrapper'>
+                <div className='nav_container'>
+                    <div className='nav_wrapper'>
                         <div className='menu-links'>
                             <nav>
-                                <ul>
-                                    <li>
+                                <ul className="menu-links-list">
+                                    <li className="menu-links-list-item">
                                         <Link
                                             onMouseEnter={e => handleHover(e)}
                                             onMouseOut={e => handleHoverExit(e)}
@@ -94,7 +94,7 @@ const Hamburger = (props) => {
                                             Professional
                                         </Link>
                                     </li>
-                                    <li>
+                                    <li className="menu-links-list-item">
                                         <Link
                                             onMouseEnter={e => handleHover(e)}
                                             onMouseOut={e => handleHoverExit(e)}
@@ -103,7 +103,7 @@ const Hamburger = (props) => {
                                             Personal
                                         </Link>
                                     </li>
-                                    <li>
+                                    <li className="menu-links-list-item">
                                         <Link
                                             onMouseEnter={e => handleHover(e)}
                                             onMouseOut={e => handleHoverExit(e)}
