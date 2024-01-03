@@ -1,5 +1,4 @@
 import TimelineItem from "../components/Timeline/TimelineItem.jsx";
-import {Fragment} from "react";
 
 export const TimelineEntries = () => {
     return (

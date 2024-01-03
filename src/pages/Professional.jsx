@@ -3,6 +3,7 @@ import {TimelineEntries} from "../content/TimelineEntries.jsx";
 import "../styles/professional.scss"
 import {HeroHeader} from "../components/HeroHeader/HeroHeader.jsx";
 import neoncity from "../images/neoncity.jpeg"
+import {EducationEntries} from "../content/EducationEntries.jsx"
 
 export function Professional() {
 
@@ -25,9 +26,10 @@ export function Professional() {
                 <Timeline lineColor="#ffaf1b">
                     <TimelineEntries/>
                 </Timeline>
-                <div className="professional-education">
-                    
-                </div>
+                <EducationEntries />
+            </div>
+            <div className="professional-skills">
+
             </div>
         </div>
     )
