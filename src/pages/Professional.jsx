@@ -4,6 +4,8 @@ import "../styles/professional.scss"
 import {HeroHeader} from "../components/HeroHeader/HeroHeader.jsx";
 import neoncity from "../images/neoncity.jpeg"
 import {EducationEntries} from "../content/EducationEntries.jsx"
+import {HoneyComb} from "../components/HoneyComb/HoneyComb.jsx";
+import {SkillEntries} from "../content/SkillEntries.jsx";
 
 export function Professional() {
 
@@ -29,7 +31,12 @@ export function Professional() {
                 <EducationEntries />
             </div>
             <div className="professional-skills">
-
+                <div className="professional-title">
+                    Skills & Technologies
+                </div>
+                <HoneyComb>
+                    <SkillEntries />
+                </HoneyComb>
             </div>
         </div>
     )

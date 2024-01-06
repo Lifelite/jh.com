@@ -1,25 +1,33 @@
 import PropTypes from "prop-types";
-
+import "../../styles/HoneyComb.scss"
 export function HoneyCombItem(props) {
     const {
-        background,
+        backgroundURL,
         title,
         subtitle,
         style,
-        id
+        id,
+        link,
+        titleId,
+        subtitleId,
     } = props
+
+    const background = `url(${backgroundURL})`
 
     return (
         <li className="honeycomb-item" id={id}>
             <div className="honeycomb-item-in">
-                <a className="honeycomb-item-link" href="#">
-                    <div className='honeycomb-item-image'
-                         style={{
-                             backgroundImage: background,
-                             style
-                    }}></div>
-                    <h1 id={title} className="honeycomb-item-title">{title}</h1>
-                    <p id={subtitle} className="honeycomb-item-subtitle">{subtitle}</p>
+                <div className='honeycomb-item-image'
+                     style={{
+                         backgroundImage: background,
+                         style
+                     }}></div>
+
+            </div>
+            <div className="honeycomb-item-out">
+                <a className="honeycomb-item-link" href={link}>
+                    <h1 id={titleId} className="honeycomb-item-title">{title}</h1>
+                    <p id={subtitleId} className="honeycomb-item-subtitle">{subtitle}</p>
                 </a>
             </div>
         </li>
@@ -28,12 +36,19 @@ export function HoneyCombItem(props) {
 
 HoneyCombItem.defaultProps = {
     style: null,
+    id: null,
+    titleId: null,
+    subtitleId: null,
+    link: "#",
 }
 
 HoneyCombItem.propTypes = {
-    background: PropTypes.string,
+    backgroundURL: PropTypes.object.isRequired,
     title: PropTypes.string,
     subtitle: PropTypes.string,
     style: PropTypes.any,
     id: PropTypes.string,
+    link: PropTypes.string,
+    titleId: PropTypes.string,
+    subtitleId: PropTypes.string,
 }
