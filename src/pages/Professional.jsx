@@ -38,6 +38,11 @@ export function Professional() {
                     <SkillEntries />
                 </HoneyComb>
             </div>
+            <div className="professional-portfolio">
+                <div className="professional-title">
+                    Projects & Portfolio
+                </div>
+            </div>
         </div>
     )
 }

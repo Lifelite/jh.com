@@ -10,9 +10,9 @@ export const EducationEntries = () => {
 
     return (
         <div className="professional-education">
-            <text className="professional-title" id="education">
+            <div className="professional-title" id="education">
                 Education & Certifications
-            </text>
+            </div>
             <div className="professional-education-items">
                 <BounceIn delay={.4}>
                     <HoverCard

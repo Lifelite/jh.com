@@ -43,7 +43,7 @@ HoneyCombItem.defaultProps = {
 }
 
 HoneyCombItem.propTypes = {
-    backgroundURL: PropTypes.object.isRequired,
+    backgroundURL: PropTypes.string.isRequired,
     title: PropTypes.string,
     subtitle: PropTypes.string,
     style: PropTypes.any,
