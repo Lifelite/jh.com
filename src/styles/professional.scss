@@ -8,12 +8,12 @@ $primary-color: #ffaf1b;
   flex-direction: column;
 
   .professional-resume {
-      display: flex;
-      flex-direction: inherit;
-      justify-content: inherit;
-      align-content: inherit;
-      align-self: center;
-      background-color: #1a1a1a;
+    display: flex;
+    flex-direction: inherit;
+    justify-content: inherit;
+    align-content: inherit;
+    align-self: center;
+    background-color: #1a1a1a;
     width: 100vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -47,11 +47,52 @@ $primary-color: #ffaf1b;
 
 .professional-skills {
   width: 100vw;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  background-color: #1a1a1a;
+  background-color: #ffaf1b;
+  padding-bottom: 2em;
 
-  .professional-title{
+  .professional-title {
     margin-bottom: 2em;
+    width: 100vw
+  }
+
+  .honeycomb-grid {
+    padding-bottom: 5%;
+  }
+
+  .honeycomb-item {
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+
   }
 }
+  .professional-portfolio {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+
+    .professional-title {
+      margin-bottom: 2em;
+      margin-top: 2em;
+    }
+  }
+
+  @keyframes animate-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .professional-title {
+      margin-top: 8rem;
+      padding-bottom: 2rem;
+    }
+  }
