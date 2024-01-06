@@ -10,7 +10,7 @@ export function HoverCard(props) {
         image,
         imageAlt,
         id,
-    } = props
+    } = props;
 
     return (
         <div className="hover-card" id={id}>
@@ -38,4 +38,4 @@ HoverCard.propTypes = {
     image: PropTypes.node.isRequired,
     imageAlt: PropTypes.string,
     id: PropTypes.string,
-}
+};

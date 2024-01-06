@@ -44,3 +44,14 @@ $primary-color: #ffaf1b;
   top: 0;
   z-index: 100;
 }
+
+.professional-skills {
+  width: 100vw;
+  display:flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+
+  .professional-title{
+    margin-bottom: 2em;
+  }
+}
