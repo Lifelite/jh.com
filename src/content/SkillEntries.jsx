@@ -21,8 +21,6 @@ import appiumIcon from "../images/icons/appium.png"
 import kotlinIcon from "../images/icons/kotlin.jpg"
 import mulesoftIcon from "../images/icons/mulesoft.png"
 import moreIcon from "../images/icons/more.png"
-import BounceIn from "../components/BounceIn.jsx";
-import VisibilitySensor from "react-visibility-sensor";
 
 
 export const SkillEntries = () => {
@@ -35,7 +33,7 @@ export const SkillEntries = () => {
             id: "selenium",
             link: "https://www.selenium.dev/",
         },
-            {
+        {
             backgroundURL: appiumIcon,
             title: "Appium",
             subtitle: "2",
@@ -49,7 +47,7 @@ export const SkillEntries = () => {
             id: "playwright",
             link: "https://www.playwright.dev/",
         },
-            {
+        {
             backgroundURL: browserStackIcon,
             title: "Browserstack",
             subtitle: "8",
@@ -154,7 +152,7 @@ export const SkillEntries = () => {
             id: "gcp",
             link: "https://cloud.google.com/",
         },
-            {
+        {
             backgroundURL: mulesoftIcon,
             title: "Mulesoft",
             subtitle: "5",
@@ -190,15 +188,15 @@ export const SkillEntries = () => {
     return (
         <>
             {skills.map(skill => (
-                    <HoneyCombItem
-                        key={skill.id}
-                        backgroundURL={skill.backgroundURL}
-                        title={skill.title}
-                        subtitle={"Years Experience: " + skill.subtitle}
-                        id={"skill-" + skill.id}
-                        link={skill.link}
-                        TitleId={skill.id + "-title"}
-                    />
+                <HoneyCombItem
+                    key={skill.id}
+                    backgroundURL={skill.backgroundURL}
+                    title={skill.title}
+                    subtitle={"Years Experience: " + skill.subtitle}
+                    id={"skill-" + skill.id}
+                    link={skill.link}
+                    TitleId={skill.id + "-title"}
+                />
             ))}
         </>
     )

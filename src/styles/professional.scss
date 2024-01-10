@@ -45,11 +45,12 @@ $primary-color: #ffaf1b;
 }
 
 .professional-skills {
-  width: 100vw;
+  width: 60vw;
   display: flex;
   flex-direction: column;
-  background-color: #ffaf1b;
   padding-bottom: 2em;
+  align-self: center;
+  background-color: #1a1a1a;
 
   .professional-title {
     margin-bottom: 2em;
@@ -58,6 +59,9 @@ $primary-color: #ffaf1b;
 
   .honeycomb-grid {
     padding-bottom: 5%;
+    max-width: 1440px;
+    background-color: #1b1b1b;
+    border-radius: 10%;
   }
 
   .honeycomb-item {
@@ -65,7 +69,6 @@ $primary-color: #ffaf1b;
     animation-name: animate-fade;
     animation-delay: 0.5s;
     animation-fill-mode: backwards;
-
   }
 }
   .professional-portfolio {
@@ -77,6 +80,15 @@ $primary-color: #ffaf1b;
     .professional-title {
       margin-bottom: 2em;
       margin-top: 2em;
+    }
+    .professional-portfolio-items {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 50vh;
+      font-family: 'Montserrat', sans-serif;
     }
   }
 
