@@ -74,7 +74,8 @@ export const handleHoverExit = e => {
 export const handleOption = (option, target) => {
     gsap.to(target, {
         duration: 0,
-        background: `url(${option}) center center`
+        background: `url(${option}) center center`,
+        backgroundRepeat: "no-repeat"
     });
     gsap.to(target, {
         duration: 0.4,

@@ -4,7 +4,7 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
-import "./styles/_base.scss";
+//import "./styles/_base.scss";
 import ErrorPage from "./routes/error-page.jsx";
 import Root from "./routes/root.jsx";
 import {Professional} from "./pages/Professional.jsx";
@@ -41,7 +41,7 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
         errorElement: <ErrorPage />
-    }
+    },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -9,7 +9,7 @@ export const TimelineEntries = () => {
                 dateInnerStyle={{ background: '#0e4067', color: '#ffffff' }}
                 style={{ color: '#183b77' }}
                 bodyContainerStyle={{
-                    background: 'rgba(105,105,105,0.44)',
+                    background: 'rgba(24,24,24)',
                     padding: '20px',
                     borderRadius: '8px',
                     boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
@@ -38,7 +38,7 @@ export const TimelineEntries = () => {
                 dateText="January 2021 - July 2022"
                 dateInnerStyle={{ background: '#0e4067', color: '#ffffff' }}
                 bodyContainerStyle={{
-                    background: 'rgba(105,105,105,0.44)',
+                    background: 'rgba(24,24,24)',
                     padding: '20px',
                     borderRadius: '8px',
                     boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
@@ -59,7 +59,7 @@ export const TimelineEntries = () => {
                 dateText="July 2022 - March 2023"
                 dateInnerStyle={{ background: '#5af500', color: '#000000' }}
                 bodyContainerStyle={{
-                    background: 'rgba(105,105,105,0.44)',
+                    background: 'rgba(24,24,24)',
                     padding: '20px',
                     borderRadius: '8px',
                     boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
@@ -84,7 +84,7 @@ export const TimelineEntries = () => {
                 dateText="Jan 2015 - Dec 2021"
                 dateInnerStyle={{ background: '#ffc306', color: '#000000' }}
                 bodyContainerStyle={{
-                    background: 'rgba(105,105,105,0.44)',
+                    background: 'rgba(24,24,24)',
                     padding: '20px',
                     borderRadius: '8px',
                     boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
@@ -107,7 +107,7 @@ export const TimelineEntries = () => {
                 dateText="May 2011 - Dec 2014"
                 dateInnerStyle={{ background: '#ffc306', color: '#000000' }}
                 bodyContainerStyle={{
-                    background: 'rgba(105,105,105,0.44)',
+                    background: 'rgba(24,24,24)',
                     padding: '20px',
                     borderRadius: '8px',
                     boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
