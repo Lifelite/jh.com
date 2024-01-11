@@ -6,7 +6,7 @@ $primary-color: #ffaf1b;
   justify-content: center;
   align-content: center;
   flex-direction: column;
-
+  overflow-y: hidden;
 
 }
 
@@ -23,20 +23,40 @@ $primary-color: #ffaf1b;
     width: 60vw;
   }
 }
-
 .professional-education {
+  display: flex;
+  flex-direction: column;
   width: 100vw;
+  height: 100vh;
   background: #1a1a1a url("../images/educationBackground.jpeg") fixed;
+  background-size: cover;
 
-  .hover-card {
-    width: 15rem;
-    height: 15rem;
 
-    &#card2 {
-      width: 17rem;
+
+  .professional-education-items {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: row;
+    padding: 2em;
+    margin: 2em;
+    background-color: #242424;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    border-radius: 2em;
+    .hover-card {
+      width: 15rem;
+      height: 15rem;
+      padding: 1rem;
+
+      &#card2 {
+        width: 17rem;
+      }
     }
   }
 }
+
+
 
 .professional-hero {
   width: 100vw;
@@ -59,7 +79,7 @@ $primary-color: #ffaf1b;
   background-color: $primary-color;
   color: #1a1a1a;
   text-align: center;
-  padding-top: 5vh;
+  padding-top: 4vh;
   font-size: xx-large;
   font-weight: bolder;
   text-size-adjust: 20%;
@@ -97,6 +117,7 @@ $primary-color: #ffaf1b;
   }
 }
   .professional-portfolio {
+    height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -104,7 +125,6 @@ $primary-color: #ffaf1b;
 
     .professional-title {
       margin-bottom: 2em;
-      margin-top: 2em;
     }
     .professional-portfolio-items {
       margin: 0;
@@ -127,8 +147,23 @@ $primary-color: #ffaf1b;
   }
 
   @media (max-width: 900px) {
+    .professional-education {
+      height: 140vh;
+      .professional-education-items {
+        flex-direction: inherit;
+        flex-wrap: wrap;
+
+        .hover-card {
+          width: 30vh;
+        }
+      }
+
+      #card2 {
+        width: 11rem;
+      }
+    }
+
     .professional-title {
-      margin-top: 8rem;
       padding-bottom: 2rem;
     }
   }

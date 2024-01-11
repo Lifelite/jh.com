@@ -3,16 +3,13 @@ import ualr from "../images/ualr.jpeg";
 import oracle from "../images/Oracle.png"
 import istqb from "../images/ISTQB.png"
 import PropTypes from "prop-types";
-import "../styles/EducationEntries.scss";
+import "../styles/professional.scss";
 import BounceIn from "../components/BounceIn.jsx";
 
 export const EducationEntries = () => {
 
     return (
-        <div className="professional-education">
-            <div className="professional-title" id="education">
-                Education & Certifications
-            </div>
+
             <div className="professional-education-items">
                 <BounceIn delay={.4}>
                     <HoverCard
@@ -39,7 +36,7 @@ export const EducationEntries = () => {
                     />
                 </BounceIn>
             </div>
-        </div>
+
     )
 };
 

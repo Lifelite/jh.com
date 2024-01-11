@@ -31,9 +31,15 @@ export function Professional() {
                 </Timeline>
 
             </div>
-            <EducationEntries />
+            <div className="professional-education">
+                <div className="professional-title" id="education">
+                    Education & Certifications
+                </div>
+                <EducationEntries />
+            </div>
+
             <div className="professional-skills">
-                <div className="professional-title">
+                <div className="professional-title" id="skills">
                     Skills & Technologies
                 </div>
                 <HoneyComb>
@@ -41,7 +47,7 @@ export function Professional() {
                 </HoneyComb>
             </div>
             <div className="professional-portfolio">
-                <div className="professional-title">
+                <div className="professional-title" id="portfolio">
                     Projects & Portfolio
                 </div>
                 <div className="professional-portfolio-items">
@@ -50,8 +56,8 @@ export function Professional() {
                         frontButtonContent="Details"
                         backButtonContent="back"
                         frontContent={"Using Python and Selenium"}
-                        backLeftCornerContent={"Hi there"}
-                        backRightCornerContent={"What's up?"}
+                        backLeftCornerContent={"Work In Progress"}
+                        backRightCornerContent={"See Github"}
                     >
                         This is my work in progress Automation framework using Python with Playwright.
                         It started as a learning project and I ended up using it for a variety of uses, but
@@ -62,8 +68,8 @@ export function Professional() {
                         frontButtonContent="Details"
                         backButtonContent="back"
                         frontContent={"I built this!"}
-                        backLeftCornerContent={"Hi there"}
-                        backRightCornerContent={"What's up?"}
+                        backLeftCornerContent={"Work In Progress"}
+                        backRightCornerContent={"See Github"}
                     >
                         Everything seen on this web, I built from scratch.  Wanted a professional looking website
                         to showcase my skills, learn while doing, and also try different things!  <br />
