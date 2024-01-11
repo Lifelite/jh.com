@@ -22,15 +22,16 @@ export function Professional() {
                     background={`url(${neoncity})`}
                 />
             </div>
-            <div className="professional-resume">
+            <div className="professional-timeline">
                 <div className="professional-title">
                     Career Timeline
                 </div>
                 <Timeline lineColor="#ffaf1b">
                     <TimelineEntries/>
                 </Timeline>
-                <EducationEntries />
+
             </div>
+            <EducationEntries />
             <div className="professional-skills">
                 <div className="professional-title">
                     Skills & Technologies

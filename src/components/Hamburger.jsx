@@ -46,9 +46,9 @@ const Hamburger = (props) => {
     let info = useRef(null);
 
     useEffect(() => {
-        // If the menu is open and we click the menu button to close it.
+        // If the menu is open, and we click the menu button to close it.
         if (state.clicked === false) {
-            // If menu is closed and we want to open it.
+            // If menu is closed, and we want to open it.
 
             staggerRevealClose(reveal2, reveal1);
             // Set menu to display none
@@ -117,10 +117,10 @@ const Hamburger = (props) => {
                             <div ref={el => (info = el)} className='info'>
                                 <h3>About this site...</h3>
                                 <p>
-                                    While this site is partially to showcase my skillset, it's also my playground.
+                                    While this site is partially to showcase my skillset, it&#39;s also my playground.
                                     It will be continuously updated and improved from what you see today.  Some call it
-                                    "scope-creep", I prefer to call it "being Agile".
-                                    Any "bugs" found on this website are actually features, obviously.
+                                    &#34;scope-creep&#34;, I prefer to call it &#34;being Agile&#34;.
+                                    Any &#34;bugs&#34; found on this website are actually features, obviously.
                                 </p>
                             </div>
                             <div className='options'>

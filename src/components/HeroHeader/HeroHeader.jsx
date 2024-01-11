@@ -28,9 +28,9 @@ export function HeroHeader(props) {
         <div className="hero_wrapper" style={{
             backgroundImage: background
         }}>
-            {bubbles.map(id => (
+            {bubbles.map((id, index) => (
                 // eslint-disable-next-line react/jsx-key
-                    <Bubble bubbleLifeTime={bubbleLife} id={'bubble' + id}/>
+                    <Bubble bubbleLifeTime={bubbleLife} id={'bubble' + id} key={index}/>
                 ))}
             <div className="name_container">
                 <div className="name">{title}</div>
