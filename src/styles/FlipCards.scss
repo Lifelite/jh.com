@@ -88,7 +88,7 @@ $accent-color: #ffaf1b;
 
     .flipcard-subtext {
       grid-row: 3;
-      color: #313131;
+      color: #00ffd1;
       font-size: 1em;
       display: flex;
       flex-flow: row nowrap;
@@ -175,6 +175,14 @@ $accent-color: #ffaf1b;
       color: $accent-color;
       grid-row: 1;
       font-size: 0.86em;
+
+      a {
+        color: $accent-color;
+
+        &:visited {
+          color: $accent-color
+        }
+      }
     }
 
     .back-left-corner {

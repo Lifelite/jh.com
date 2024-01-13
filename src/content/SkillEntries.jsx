@@ -52,7 +52,7 @@ export const SkillEntries = () => {
             title: "Browserstack",
             subtitle: "8",
             id: "browserstack",
-            link: "https://www.playwright.dev/",
+            link: "https://www.browserstack.com/",
         },
         {
             backgroundURL: postmanIcon,
@@ -192,7 +192,7 @@ export const SkillEntries = () => {
                     key={skill.id}
                     backgroundURL={skill.backgroundURL}
                     title={skill.title}
-                    subtitle={"Years Experience: " + skill.subtitle}
+                    subtitle={skill.subtitle + " years"}
                     id={"skill-" + skill.id}
                     link={skill.link}
                     TitleId={skill.id + "-title"}

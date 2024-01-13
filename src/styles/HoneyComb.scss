@@ -11,10 +11,13 @@
   display: flex;
   flex-wrap: wrap;
   width: 90%;
+  max-width: 250px;
   margin: 0 auto;
   overflow: hidden;
   font-family: sans-serif;
   list-style-type: none;
+  padding-right: 3vh;
+  padding-top: 3vh;
 }
 
 .honeycomb-item {
@@ -120,12 +123,10 @@
 
 .honeycomb-item-title {
   color: #ffaf1b;
-  text-transform: capitalize;
+  text-transform: full-width;
   text-align: center;
-  bottom: 50%;
-  padding-top: 50%;
-  font-size: 1.5em;
-  text-wrap: avoid;
+
+  bottom: 45%;
 }
 
 .honeycomb-item h1:before, .honeycomb-item h1:after {
@@ -134,7 +135,6 @@
   width: 0.25em;
   height: 0.03em;
   background: #ffffff;
-  content: '';
   vertical-align: middle;
   transition: all 0.3s;
   text-align: center;
@@ -144,8 +144,8 @@
 .honeycomb-item-subtitle {
   top: 50%;
   text-align: center;
-  text-transform: uppercase;
-
+  text-transform: capitalize;
+  font-size: large
 }
 
 .honeycomb-item-image {
@@ -206,10 +206,12 @@
   /* Sizing and Indention */
   @media (min-width: 1201px) { /* <- 5-4  HoneyCombs per row */
     .honeycomb-grid {
-      padding-bottom: 4.4%
+      padding-bottom: 4.4%;
+      font-size: calc(75% - 2px);
     }
     .honeycomb-item {
       width: 20%; /* = 100 / 5 */
+
     }
     .honeycomb-item:nth-child(9n+6) { /* first HoneyComb of even rows */
       margin-left: 10%; /* = width of .honeycomb-item / 2  to indent even rows */
@@ -219,7 +221,7 @@
   @media (max-width: 1200px) and (min-width: 901px) { /* <- 4-3  HoneyCombs per row */
     .honeycomb-grid {
       padding-bottom: 5.5%;
-      font-size: 4rem;
+      font-size: calc(80% - 2px);
     }
     .honeycomb-item {
       width: 25%; /* = 100 / 4 */
@@ -232,7 +234,7 @@
   @media (max-width: 900px) and (min-width: 601px) { /* <- 3-2  HoneyCombs per row */
     .honeycomb-grid {
       padding-bottom: 7.4%;
-      font-size: 14px;
+      font-size: calc(80% - 2px);
     }
     .honeycomb-item {
       width: 33.333%; /* = 100 / 3 */
@@ -245,7 +247,7 @@
   @media (max-width: 600px) { /* <- 2-1  HoneyCombs per row */
     .honeycomb-grid {
       padding-bottom: 11.2%;
-      font-size: 12px;
+      font-size: calc(80% - 2px);
     }
     .honeycomb-item {
       width: 50%; /* = 100 / 3 */
@@ -255,10 +257,4 @@
     }
   }
 
-  @media (max-width: 400px) {
-    .honeycomb-grid {
-      font-size: 8px;
-    }
 
-
-  }
