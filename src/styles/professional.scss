@@ -2,29 +2,37 @@ $primary-color: #ffaf1b;
 
 .professional {
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  display: block;
   flex-direction: column;
 
   header {
-    position: sticky;
+    position: fixed;
     top: 0;
-  }
+    z-index: 90;
+    background-color: transparent;
+
+    .nav_container {
+      background-color: transparent;
+      z-index: 105;
+    }
+
+    }
+
+    .hamburger-menu {
+      z-index: 101;
+    }
+
 
   .footer-links {
     display: flex;
-    justify-self: center;
     justify-content: center;
     align-content: center;
 
     a {
       padding: 1rem;
-      font-size: x-large;
+      font-size: medium;
     }
   }
-
-
 
 
   .professional-timeline {
@@ -42,47 +50,47 @@ $primary-color: #ffaf1b;
   }
 
   .professional-education {
-    display: flex;
-    flex-direction: column;
     width: 100vw;
     height: 100vh;
     background: #1a1a1a url("../images/educationBackground.jpeg") fixed;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
+      .professional-education-items {
+        display: flex;
+        margin: 24rem 5rem;
+        background-color: #242424;
+        border-radius: 2em;
+        padding: 1em;
 
-    .professional-education-items {
-      display: flex;
-      flex-wrap: wrap;
-      align-self: center;
-      justify-self: center;
-      flex-direction: row;
-      padding: 2em;
-      margin: 15vh;
-      background-color: #242424;
-      align-content: space-evenly;
-      border-radius: 2em;
+        .professional-education-item-container {
+          display: flex;
+          transform: translate(50%, 50%);
 
-      .hover-card {
-        width: 15rem;
-        height: 15rem;
-        padding: 1rem;
+          .hover-card {
+            width: 15rem;
+            height: 15rem;
+            padding: 1rem;
 
-        &#card2 {
-          width: 17rem;
+            &#card2 {
+              width: 17rem;
+            }
         }
       }
     }
   }
 
 
-
-.professional-hero {
-  width: 100vw;
-  height: 94vh;
-  z-index: -1;
-  position: sticky;
-  top: 0;
-  background: fixed;
+  .professional-hero {
+    width: 100vw;
+    height: 94vh;
+    z-index: -1;
+    position: sticky;
+    top: 0;
+    background: fixed;
 
     .hero_wrapper {
       position: fixed;
@@ -92,39 +100,47 @@ $primary-color: #ffaf1b;
   .professional-title {
     align-self: center;
     border-radius: 0 0 2em 2em;
-    height: 10vh;
     width: 100vw;
     background-color: $primary-color;
     color: #1a1a1a;
     text-align: center;
-    padding-top: 4vh;
+    padding: 2vh 2vh;
     font-size: xx-large;
     font-weight: bolder;
     text-size-adjust: 20%;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 50;
+
+    &__top {
+      position: sticky;
+      width: 100vw;
+      background-color: $primary-color;
+      color: #1a1a1a;
+      text-align: center;
+      padding: 3vh;
+      top: 0;
+      z-index: -1;
+    }
   }
 
   .professional-skills {
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2em;
-    align-self: center;
+    height: fit-content;
+    display: block;
     background: #1a1a1a url("../images/skillsBackground.jpeg") fixed;
 
     .professional-title {
-      margin-bottom: 2em;
-      width: 100vw
+
     }
 
     .honeycomb-grid {
-      padding-bottom: 5%;
+      margin-top: 5rem;
       max-width: 1440px;
       width: 60vw;
       background-color: #1b1b1b;
       border-radius: 10%;
+      align-self: center;
     }
 
     .honeycomb-item {
@@ -137,7 +153,7 @@ $primary-color: #ffaf1b;
 
 
   .professional-portfolio {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -170,16 +186,16 @@ $primary-color: #ffaf1b;
 }
 
 @media (max-width: 900px) {
+  .professional {
   .professional-education {
-    height: 140vh;
+    height: fit-content;
 
     .professional-education-items {
-      flex-direction: inherit;
+      flex-direction: column;
       flex-wrap: wrap;
+      padding: 4rem 2rem;
+      margin-top: 5rem;
 
-      .hover-card {
-        width: 30vh;
-      }
     }
 
     #card2 {
@@ -187,7 +203,27 @@ $primary-color: #ffaf1b;
     }
   }
 
-  .professional-title {
-    padding-bottom: 2rem;
+    .professional .professional-education,
+    .professional-education-items .professional-education-item-container,
+    .hover-card#card2 {
+      width: 16rem;
+      height: 15rem;
+    }
+
+  .professional-skills {
+    height: fit-content;
+
   }
+
+  .professional-portfolio {
+    height: fit-content;
+    padding-bottom: 75vh;
+  }
+
+
+  .professional-title {
+    padding: 1rem;
+    border-radius: 0 0 25% 25%;
+  }
+}
 }
