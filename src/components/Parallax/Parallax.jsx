@@ -8,18 +8,21 @@ export function Parallax() {
 
     const navigate = useNavigate()
     const handleClick = (e) => {
-        let linkId = e.target.id;
-        switch (linkId) {
-            case "professional": navigate("/professional");
+        let directionId = e.target.id;
+        switch (directionId) {
+            case "professional-button-link": navigate("/professional")
+            break;
             // eslint-disable-next-line no-fallthrough
-            case "personal": navigate("/personal");
+            case "personal-button-link": navigate("/personal")
+            break;
             // eslint-disable-next-line no-fallthrough
-            case "contact": navigate("/contact");
+            case "contact-button-link": navigate("/contact-me")
+            break;
             // eslint-disable-next-line no-fallthrough
             default: navigate("/professional")
         }
         // add page transition
-        navigate("/professional")
+
     }
 
     return (
@@ -37,7 +40,7 @@ export function Parallax() {
             <div className="intro">
                 <ScrollInFade>
                     <TextBlock color="primary" size="large">
-                        Hi, I'm Jeremy Huntsman...
+                        Hi, I&#39;m Jeremy Huntsman...
                     </TextBlock>
                 </ScrollInFade>
                 <ScrollInFade>
@@ -57,9 +60,9 @@ export function Parallax() {
                 </ScrollInFade>
                 <ScrollInFade>
                     <div className="button-cluster">
-                        <Button id="professional" onClick={handleClick}>Professional</Button>
-                        <Button id="personal" onClick={handleClick}>Personal</Button>
-                        <Button id="contact" onClick={handleClick}>Contact Me</Button>
+                        <Button id="professional-button-link" onClick={handleClick}>Professional</Button>
+                        <Button id="personal-button-link" onClick={handleClick}>Personal</Button>
+                        <Button id="contact-button-link" onClick={handleClick}>Contact Me</Button>
                     </div>
                 </ScrollInFade>
             </div>

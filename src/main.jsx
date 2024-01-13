@@ -42,6 +42,10 @@ const router = createBrowserRouter([
         element: <Contact />,
         errorElement: <ErrorPage />
     },
+    {
+        path: "/experimental",
+        element: <></>
+    }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
