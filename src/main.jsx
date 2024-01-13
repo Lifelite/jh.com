@@ -38,10 +38,14 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />
     },
     {
-        path: "/contact",
+        path: "/contact-me",
         element: <Contact />,
         errorElement: <ErrorPage />
     },
+    {
+        path: "/experimental",
+        element: <></>
+    }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

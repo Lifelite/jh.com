@@ -5,6 +5,7 @@ export default function Button(props) {
     const {
         children,
         onClick,
+        id,
     } = props
 
 
@@ -14,7 +15,7 @@ export default function Button(props) {
             onClick={onClick}
         >
             <span className="button-top"></span>
-            <span className="button-text">{children}</span>
+            <span id={id} className="button-text">{children}</span>
             <span className="button-bottom"></span>
             <span className="button-bottom2"></span>
         </button>
@@ -29,4 +30,5 @@ Button.defaultProps = {
 Button.propTypes = {
     children: PropTypes.node,
     onClick: PropTypes.func,
+    id: PropTypes.string,
 }
