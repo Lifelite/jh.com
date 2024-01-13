@@ -8,8 +8,8 @@ export function Parallax() {
 
     const navigate = useNavigate()
     const handleClick = (e) => {
-
-        switch (e.target.id) {
+        let linkId = e.target.id;
+        switch (linkId) {
             case "professional": navigate("/professional");
             // eslint-disable-next-line no-fallthrough
             case "personal": navigate("/personal");
