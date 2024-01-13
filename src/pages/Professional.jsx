@@ -10,12 +10,17 @@ import {FlipCard} from "../components/FlipCard.jsx";
 import {Link} from "react-router-dom";
 import websiteImage from "../images/websiteImage.png"
 import {Footer} from "../components/Footer/Footer.jsx";
+import NavBar from "../components/NavBar.jsx";
+import voodooImage from "../images/voodooImage.jpeg"
+import battleBotImage from "../images/battlebot.jpeg"
+import dhImage from "../images/DH-Logo.png"
 
 export function Professional() {
 
 
     return (
         <div className="professional">
+            <NavBar />
             <div className="professional-hero">
                 <HeroHeader
                     title="Jeremy Huntsman"
@@ -82,6 +87,7 @@ export function Professional() {
                         frontContent={"Playwright | Python"}
                         backLeftCornerContent={"Status: Rebuilding"}
                         backRightCornerContent={"See Github"}
+                        background={voodooImage}
                     >
                         This is my work in progress Automation framework using Python with Playwright.
                         It started as a learning project and I ended up using it for a variety of uses, but
@@ -93,10 +99,12 @@ export function Professional() {
                         backButtonContent="back"
                         frontContent={"Python"}
                         backLeftCornerContent={"Status: Depreciated"}
-                        backRightCornerContent={<Link to={"https://github.com/Lifelite/discordbattlebot"}>GitHub Repo</Link>}
+                        background={battleBotImage}
+                        backRightCornerContent={<Link to={"https://github.com/Lifelite/discordbattlebot"}>GitHub
+                            Repo</Link>}
                     >
                         This was a fun weekend project using Python and Discord.gg&#39;s API to build a simple character
-                        battle game for my friends in my discord server.  It utilizes their API along with a cloud MySQL
+                        battle game for my friends in my discord server. It utilizes their API along with a cloud MySQL
                         database allow users to create, edit, and delete their characters; as well as allowing them to
                         start a battle that pits all the characters against each other in a tournament style battle.
                     </FlipCard>
@@ -104,20 +112,29 @@ export function Professional() {
                         cardTitle={"Gaming Community Website"}
                         frontButtonContent="Details"
                         backButtonContent="back"
+                        background={dhImage}
                         frontContent={"Python"}
                         backLeftCornerContent={"Status: Deployed | Updating"}
                         backRightCornerContent={<Link to={"https://github.com/Lifelite/DHWebsite3"}>GitHub Repo</Link>}
                     >
-                        Created this website for my gaming community.  This was a rushed job to get it out the door for
-                        our annual secret Santa Event, but it&#39;s fully functional and was used during the event to great
-                        success! <br />
+                        Created this website for my gaming community. This was a rushed job to get it out the door for
+                        our annual secret Santa Event, but it&#39;s fully functional and was used during the event to
+                        great
+                        success! <br/>
                         The website utilizes Auth, MySQL, Cloud Functions, Dashboards, and more.
                     </FlipCard>
                 </div>
             </div>
-            <Footer>
-                This is a footer
-            </Footer>
+            <div className="professional-footer">
+                <Footer bubbleCount={25}>
+                    <div>
+                        <div className="footer-links">
+
+                            <p>© 2024 Jeremy Huntsman. All rights reserved.</p>
+                        </div>
+                    </div>
+                </Footer>
+            </div>
         </div>
     )
 }
