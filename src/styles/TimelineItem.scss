@@ -78,8 +78,8 @@ $black: #000000;
   background-color: #ffffff;
   border-radius: 100%;
   top: 15%;
-  right: -5px;
-  z-index: 99;
+  right: -.5rex;
+  z-index: 1;
   box-sizing: content-box;
 }
 .entry .body {
@@ -159,9 +159,9 @@ $black: #000000;
   }
   .entry .title:before {
     top: 15%;
-    left: 3px;
+    left: 0;
     right: auto;
-    z-index: 99;
+    z-index: 2;
   }
   .entry .body {
     margin: 20px 0 3em;

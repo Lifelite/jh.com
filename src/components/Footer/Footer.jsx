@@ -31,24 +31,6 @@ export function Footer(props) {
                     {children}
                 </div>
             </div>
-            <svg style={{
-                position: 'fixed',
-                top: 40 + 'vh',
-            }}>
-                <defs>
-                    <filter id="blob">
-                        <feGaussianBlur
-                            in="SourceGraphic"
-                            stdDeviation="10"
-                            result="blur"/>
-                        <feColorMatrix
-                            in="blur"
-                            mode="matrix"
-                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                            result="blob"/>
-                    </filter>
-                </defs>
-            </svg>
         </div>
     )
 }

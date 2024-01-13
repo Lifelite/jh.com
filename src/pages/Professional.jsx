@@ -17,11 +17,15 @@ import dhImage from "../images/DH-Logo.png"
 
 export function Professional() {
 
+    const handleScrollToTop = () => {
+        scrollTo(0,0)
+    };
 
     return (
         <div className="professional">
             <NavBar />
-            <div className="professional-hero">
+            <div className="professional-title__top"></div>
+            <div className="professional-hero" id="top">
                 <HeroHeader
                     title="Jeremy Huntsman"
                     subtitle="Lead Quality Engineer"
@@ -30,7 +34,7 @@ export function Professional() {
                     background={`url(${neoncity})`}
                 />
             </div>
-            <div className="professional-timeline">
+            <div className="professional-timeline" id="timeline">
                 <div className="professional-title">
                     Career Timeline
                 </div>
@@ -86,7 +90,7 @@ export function Professional() {
                         backButtonContent="back"
                         frontContent={"Playwright | Python"}
                         backLeftCornerContent={"Status: Rebuilding"}
-                        backRightCornerContent={"See Github"}
+                        backRightCornerContent={<Link to="https://github.com/Lifelite/Voodoo_Automation_Framework">Github Repo</Link>}
                         background={voodooImage}
                     >
                         This is my work in progress Automation framework using Python with Playwright.
@@ -131,8 +135,15 @@ export function Professional() {
                         <div className="footer-links">
 
                             <p>© 2024 Jeremy Huntsman. All rights reserved.</p>
+
                         </div>
+                        <ol>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/contact">Contact</Link></li>
+                            <li><Link to="#top" onClick={handleScrollToTop}>Back to Top</Link></li>
+                        </ol>
                     </div>
+
                 </Footer>
             </div>
         </div>

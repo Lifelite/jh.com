@@ -4,39 +4,37 @@ import oracle from "../images/Oracle.png"
 import istqb from "../images/ISTQB.png"
 import PropTypes from "prop-types";
 import "../styles/professional.scss";
-import BounceIn from "../components/BounceIn.jsx";
 
 export const EducationEntries = () => {
 
     return (
 
-            <div className="professional-education-items">
-                <BounceIn delay={.4}>
-                    <HoverCard
-                        title="Associates of Arts"
-                        image={ualr}
-                        bodyText="University of Little Rock"
-                        id="card1"
-                    />
-                </BounceIn>
-                <BounceIn delay={.12}>
-                    <HoverCard
-                        title="Certified Tester"
-                        image={istqb}
-                        bodyText="ISTQB-F"
-                        id="card2"
-                    />
-                </BounceIn>
-                <BounceIn delay={.48}>
-                    <HoverCard
-                        title="Oracle SQL Certified Associate"
-                        image={oracle}
-                        bodyText="Oracle"
-                        id="card3"
-                    />
-                </BounceIn>
+        <div className="professional-education-items">
+            <div className="professional-education-item-container">
+                <HoverCard
+                    title="Associates of Arts"
+                    image={ualr}
+                    bodyText="University of Little Rock"
+                    id="card1"
+                />
             </div>
-
+            <div className="professional-education-item-container">
+                <HoverCard
+                    title="Certified Tester"
+                    image={istqb}
+                    bodyText="ISTQB-F"
+                    id="card2"
+                />
+            </div>
+            <div className="professional-education-item-container">
+                <HoverCard
+                    title="Oracle SQL Certified Associate"
+                    image={oracle}
+                    bodyText="Oracle"
+                    id="card3"
+                />
+            </div>
+        </div>
     )
 };
 

@@ -48,13 +48,14 @@ header {
 
   .inner-header {
     position: relative;
-    z-index: 10;
+    z-index: 102;
     height: 6vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     .logo a {
+      z-index: 102;
       font-weight: 700;
       font-size: 1.5rem;
       text-decoration: none;
@@ -62,6 +63,7 @@ header {
     }
 
     .menu {
+      z-index: 102;
       button {
         border: none;
         background: none;
@@ -75,7 +77,7 @@ header {
 
   .hamburger-menu {
     display: none;
-    z-index: 9;
+    z-index: 101;
     top: 0;
     left: 0;
     right: 0;

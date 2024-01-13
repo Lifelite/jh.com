@@ -57,18 +57,19 @@ const NavBar = () => {
             <div className="nav_container">
                 <div className="nav_wrapper">
                     <div className="inner-header">
-                        <div className="logo">
-                            <Link to="/">JH</Link>
-                        </div>
+
                         <div className="menu">
                             <button disabled={disabled} onClick={handleMenu}>
                                 {state.menuName}
                             </button>
                         </div>
+                        <div className="logo">
+                            <Link to="/">JH</Link>
+                        </div>
                     </div>
                 </div>
             </div>
-            <Hamburger state={state} />
+            <Hamburger state={state}/>
         </header>
     );
 };
