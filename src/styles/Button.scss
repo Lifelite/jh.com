@@ -152,3 +152,29 @@ button.fancy {
   }
 
 }
+
+.basic-button {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #000000;
+  border-radius:5px;
+  border:1px solid;
+  cursor:pointer;
+  color:$primary-color;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.5s;
+  margin-top:-4px;
+  font-weight:700;
+
+  &:hover {
+    background:var(--color);
+    color: var(--background);
+  }
+  &:disabled {
+    background-color: grey;
+    color: #242424;
+    cursor: not-allowed;
+  }
+}

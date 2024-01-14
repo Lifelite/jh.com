@@ -4,5 +4,11 @@
       "source": "/(.*)",
       "destination": "/"
     }
-  ]
+  ],
+  "functions": {
+    "_api/contactFormHandler.js": {
+      "memory": 3008,
+      "maxDuration": 60
+    }
+  }
 }
