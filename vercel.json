@@ -6,7 +6,7 @@
     }
   ],
   "functions": {
-    "_api/contactFormHandler.js": {
+    "api/contactFormHandler.js": {
       "memory": 1024,
       "maxDuration": 10
     }
