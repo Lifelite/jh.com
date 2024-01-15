@@ -10,6 +10,7 @@ export function HoneyCombItem(props) {
         link,
         titleId,
         subtitleId,
+        linkTarget,
     } = props
 
     const background = `url(${backgroundURL})`
@@ -25,7 +26,7 @@ export function HoneyCombItem(props) {
 
             </div>
             <div className="honeycomb-item-out">
-                <a className="honeycomb-item-link" href={link}>
+                <a className="honeycomb-item-link" target={linkTarget} href={link}>
                     <h1 id={titleId} className="honeycomb-item-title">{title}</h1>
                     <p id={subtitleId} className="honeycomb-item-subtitle">{subtitle}</p>
                 </a>
@@ -40,6 +41,7 @@ HoneyCombItem.defaultProps = {
     titleId: null,
     subtitleId: null,
     link: "#",
+    linkTarget: "_blank"
 }
 
 HoneyCombItem.propTypes = {
@@ -51,4 +53,5 @@ HoneyCombItem.propTypes = {
     link: PropTypes.string,
     titleId: PropTypes.string,
     subtitleId: PropTypes.string,
+    linkTarget: PropTypes.string,
 }

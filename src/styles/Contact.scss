@@ -1,4 +1,21 @@
+$primary-color: #ffaf1b;
+
 .contact {
-  background-color: grey;
+  background-color: black;
   height: 100vh;
 }
+
+form { max-width:420px; margin:50px auto; }
+
+.contact-title {
+  text-align: center;
+  font-family: 'Arial', fantasy;
+  h2{
+    font-size: 4rem;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+
+}
+

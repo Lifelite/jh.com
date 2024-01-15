@@ -1,7 +1,7 @@
 import '../../styles/Parallax.scss'
 import {TextBlock} from "./TextBlock.jsx";
 import ScrollInFade from "../ScrollFadeIn.jsx";
-import Button from "../Button.jsx";
+import FancyAnimatedButton from "../Buttons/FancyAnimatedButton.jsx";
 import {useNavigate} from "react-router-dom";
 
 export function Parallax() {
@@ -60,9 +60,9 @@ export function Parallax() {
                 </ScrollInFade>
                 <ScrollInFade>
                     <div className="button-cluster">
-                        <Button id="professional-button-link" onClick={handleClick}>Professional</Button>
-                        <Button id="personal-button-link" onClick={handleClick}>Personal</Button>
-                        <Button id="contact-button-link" onClick={handleClick}>Contact Me</Button>
+                        <FancyAnimatedButton id="professional-button-link" onClick={handleClick}>Professional</FancyAnimatedButton>
+                        <FancyAnimatedButton id="personal-button-link" onClick={handleClick}>Personal</FancyAnimatedButton>
+                        <FancyAnimatedButton id="contact-button-link" onClick={handleClick}>Contact</FancyAnimatedButton>
                     </div>
                 </ScrollInFade>
             </div>

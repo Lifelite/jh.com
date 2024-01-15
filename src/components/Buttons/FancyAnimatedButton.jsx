@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import '../styles/Button.scss'
+import '../../styles/Button.scss'
 
-export default function Button(props) {
+export default function FancyAnimatedButton(props) {
     const {
         children,
         onClick,
@@ -22,12 +22,12 @@ export default function Button(props) {
     )
 }
 
-Button.defaultProps = {
+FancyAnimatedButton.defaultProps = {
     type: 'primary-button',
     onClick: () => Promise.resolve(),
 }
 
-Button.propTypes = {
+FancyAnimatedButton.propTypes = {
     children: PropTypes.node,
     onClick: PropTypes.func,
     id: PropTypes.string,
