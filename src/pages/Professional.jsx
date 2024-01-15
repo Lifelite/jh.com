@@ -69,7 +69,7 @@ export function Professional() {
                         backButtonContent="back"
                         frontContent="ReactJS | Sass | Vite"
                         backLeftCornerContent={"Status: Production - Ongoing"}
-                        backRightCornerContent={<Link to={"https://github.com/Lifelite/jh.com"}>GitHub Repo</Link>}
+                        backRightCornerContent={<Link target="_blank" to={"https://github.com/Lifelite/jh.com"}>GitHub Repo</Link>}
                         background={websiteImage}
                     >
                         Everything seen on this web, I built from scratch. Wanted a professional looking website
@@ -90,7 +90,7 @@ export function Professional() {
                         backButtonContent="back"
                         frontContent={"Playwright | Python"}
                         backLeftCornerContent={"Status: Rebuilding"}
-                        backRightCornerContent={<Link to="https://github.com/Lifelite/Voodoo_Automation_Framework">Github Repo</Link>}
+                        backRightCornerContent={<Link target="_blank" to="https://github.com/Lifelite/Voodoo_Automation_Framework">Github Repo</Link>}
                         background={voodooImage}
                     >
                         This is my work in progress Automation framework using Python with Playwright.
@@ -104,7 +104,7 @@ export function Professional() {
                         frontContent={"Python"}
                         backLeftCornerContent={"Status: Depreciated"}
                         background={battleBotImage}
-                        backRightCornerContent={<Link to={"https://github.com/Lifelite/discordbattlebot"}>GitHub
+                        backRightCornerContent={<Link target="_blank" to={"https://github.com/Lifelite/discordbattlebot"}>GitHub
                             Repo</Link>}
                     >
                         This was a fun weekend project using Python and Discord.gg&#39;s API to build a simple character
@@ -119,7 +119,7 @@ export function Professional() {
                         background={dhImage}
                         frontContent={"Python"}
                         backLeftCornerContent={"Status: Deployed | Updating"}
-                        backRightCornerContent={<Link to={"https://github.com/Lifelite/DHWebsite3"}>GitHub Repo</Link>}
+                        backRightCornerContent={<Link target="_blank" to={"https://github.com/Lifelite/DHWebsite3"}>GitHub Repo</Link>}
                     >
                         Created this website for my gaming community. This was a rushed job to get it out the door for
                         our annual secret Santa Event, but it&#39;s fully functional and was used during the event to
