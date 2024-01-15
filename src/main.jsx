@@ -2,7 +2,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import {
     createBrowserRouter,
-    RouterProvider,
+    RouterProvider
 } from "react-router-dom";
 //import "./styles/_base.scss";
 import ErrorPage from "./routes/error-page.jsx";
@@ -11,6 +11,7 @@ import {Professional} from "./pages/Professional.jsx";
 import {Personal} from "./pages/Personal.jsx";
 import {Contact} from "./pages/Contact.jsx";
 import { inject } from '@vercel/analytics';
+
 
 inject();
 
@@ -45,7 +46,11 @@ const router = createBrowserRouter([
     {
         path: "/experimental",
         element: <></>
-    }
+    },
+    // {
+    //     path: "/api",
+    //
+    // }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
