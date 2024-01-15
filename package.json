@@ -32,7 +32,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
     "sass": "^1.69.5",
-    "vite": "^5.0.0",
+    "vike": "^0.4.156",
+    "vite": ">=4.2.0",
     "vite-plugin-vercel": "^2.0.0"
   }
 }
