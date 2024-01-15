@@ -1,5 +1,5 @@
 import "../styles/Contact.scss"
-import NavBar from "../components/NavBar.jsx";
+import NavBar from "../components/NavBars/FancyNav/NavBar.jsx";
 import {BasicButton} from "../components/Buttons/BasicButton.jsx";
 import {TextField} from "../components/Forms/TextField.jsx";
 import {TextArea} from "../components/Forms/TextArea.jsx";

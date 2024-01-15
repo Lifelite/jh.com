@@ -35,7 +35,7 @@ export const TimelineEntries = () => {
             </TimelineItem>
             <TimelineItem
                 key="002"
-                dateText="January 2021 - July 2022"
+                dateText="July 2022 - March 2023"
                 dateInnerStyle={{ background: '#0e4067', color: '#ffffff' }}
                 bodyContainerStyle={{
                     background: 'rgba(24,24,24)',
@@ -56,7 +56,7 @@ export const TimelineEntries = () => {
             </TimelineItem>
             <TimelineItem
                 key="003"
-                dateText="July 2022 - March 2023"
+                dateText="Jan 2021 - July 2022"
                 dateInnerStyle={{ background: '#5af500', color: '#000000' }}
                 bodyContainerStyle={{
                     background: 'rgba(24,24,24)',
@@ -82,7 +82,7 @@ export const TimelineEntries = () => {
             <TimelineItem
                 key="004"
                 dateText="Jan 2015 - Dec 2021"
-                dateInnerStyle={{ background: '#ffc306', color: '#000000' }}
+                dateInnerStyle={{ background: '#00b0cb', color: '#000000' }}
                 bodyContainerStyle={{
                     background: 'rgba(24,24,24)',
                     padding: '20px',
@@ -105,7 +105,7 @@ export const TimelineEntries = () => {
             <TimelineItem
                 key="005"
                 dateText="May 2011 - Dec 2014"
-                dateInnerStyle={{ background: '#ffc306', color: '#000000' }}
+                dateInnerStyle={{ background: '#00b0cb', color: '#000000' }}
                 bodyContainerStyle={{
                     background: 'rgba(24,24,24)',
                     padding: '20px',
@@ -121,9 +121,9 @@ export const TimelineEntries = () => {
                 </p>
                 <p>
                     Job duties included overseeing large scale implementation of new products, assisting VIP
-                    clients, troubleshooting "impossible" issues, and working with Software Development to test,
+                    clients, troubleshooting &amp34;impossible&amp34; issues, and working with Software Development to test,
                     prototype, and integrate solutions with a focus on Hardware.  Being on a very small team, we
-                    are known as the "miracle workers" of the business... finding solutions to problems using any means
+                    are known as the &amp34;miracle workers&amp34; of the business... finding solutions to problems using any means
                     available.
                 </p>
             </TimelineItem>

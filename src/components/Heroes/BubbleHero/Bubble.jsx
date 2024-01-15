@@ -1,6 +1,6 @@
 import {Circle} from "./Circle.jsx";
 import {useRef} from "react";
-import "../../styles/HeroHeader.scss"
+import "../../../styles/HeroHeader.scss"
 import PropTypes from "prop-types";
 export function Bubble(props) {
     const {

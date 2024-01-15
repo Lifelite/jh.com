@@ -1,8 +1,8 @@
 import Timeline from "../components/Timeline/Timeline.jsx";
 import {TimelineEntries} from "../content/TimelineEntries.jsx";
 import "../styles/professional.scss"
-import {HeroHeader} from "../components/HeroHeader/HeroHeader.jsx";
-import neoncity from "../images/neoncity.jpeg"
+import {HeroHeader} from "../components/Heroes/BubbleHero/HeroHeader.jsx";
+import neoncity from "../images/backgroundpro.jpeg"
 import {EducationEntries} from "../content/EducationEntries.jsx"
 import {HoneyComb} from "../components/HoneyComb/HoneyComb.jsx";
 import {SkillEntries} from "../content/SkillEntries.jsx";
@@ -10,7 +10,7 @@ import {FlipCard} from "../components/FlipCard.jsx";
 import {Link} from "react-router-dom";
 import websiteImage from "../images/websiteImage.png"
 import {Footer} from "../components/Footer/Footer.jsx";
-import NavBar from "../components/NavBar.jsx";
+import NavBar from "../components/NavBars/FancyNav/NavBar.jsx";
 import voodooImage from "../images/voodooImage.jpeg"
 import battleBotImage from "../images/battlebot.jpeg"
 import dhImage from "../images/DH-Logo.png"
@@ -117,7 +117,7 @@ export function Professional() {
                         frontButtonContent="Details"
                         backButtonContent="back"
                         background={dhImage}
-                        frontContent={"Python"}
+                        frontContent={"ReactJS | MaterialUI | Vite"}
                         backLeftCornerContent={"Status: Deployed | Updating"}
                         backRightCornerContent={<Link target="_blank" to={"https://github.com/Lifelite/DHWebsite3"}>GitHub Repo</Link>}
                     >
@@ -139,7 +139,7 @@ export function Professional() {
                         </div>
                         <ol>
                             <li><Link to="/">Home</Link></li>
-                            <li><Link to="/contact">Contact</Link></li>
+                            <li><Link to="/contact-me">Contact</Link></li>
                             <li><Link to="#top" onClick={handleScrollToTop}>Back to Top</Link></li>
                         </ol>
                     </div>
