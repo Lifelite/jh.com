@@ -139,7 +139,7 @@ export function Professional() {
                         </div>
                         <ol>
                             <li><Link to="/">Home</Link></li>
-                            <li><Link to="/contact">Contact</Link></li>
+                            <li><Link to="/contact-me">Contact</Link></li>
                             <li><Link to="#top" onClick={handleScrollToTop}>Back to Top</Link></li>
                         </ol>
                     </div>
