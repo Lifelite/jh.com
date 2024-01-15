@@ -1,0 +1,41 @@
+.contact-thankyou {
+  display: flex;
+  height: 94vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .contact-thankyou-content {
+    height: 25rem;
+    width: 25rem;
+    background-color: #242424;
+    padding: 2rem;
+    border-radius: 2em;
+    animation: popIn;
+    animation-duration: 1s;
+
+    p {
+      font-size: 1.2rem;
+      font-weight: bold;
+
+    }
+    .thankyou-content-header {
+      font-size: 3rem;
+      text-align: center;
+    }
+    #returnHomeButton {
+      margin-top: 2rem;
+    }
+
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0) rotateY(360deg) ;
+  }
+  100% {
+    transform: scale(1) rotateY(0deg);
+  }
+}

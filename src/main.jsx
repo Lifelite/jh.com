@@ -11,47 +11,9 @@ import {Professional} from "./pages/Professional.jsx";
 import {Personal} from "./pages/Personal.jsx";
 import {Contact} from "./pages/Contact.jsx";
 import { inject } from '@vercel/analytics';
-
+import router from "./functions/router.jsx";
 
 inject();
-
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Root/>,
-        errorElement: <ErrorPage/>,
-        // loader: rootLoader,
-        // children: [
-        //     {
-        //         path: "/home",
-        //         element: <Home />,
-        //     }
-        // ]
-    },
-    {
-        path:"/personal",
-        element:<Personal />,
-        errorElement: <ErrorPage />
-    },
-    {
-        path: "/professional",
-        element: <Professional />,
-        errorElement: <ErrorPage />
-    },
-    {
-        path: "/contact-me",
-        element: <Contact />,
-        errorElement: <ErrorPage />
-    },
-    {
-        path: "/experimental",
-        element: <></>
-    },
-    // {
-    //     path: "/api",
-    //
-    // }
-]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>

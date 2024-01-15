@@ -169,8 +169,8 @@ button.fancy {
   font-weight:700;
 
   &:hover {
-    background:var(--color);
-    color: var(--background);
+    background:$primary-color;
+    color: black;
   }
   &:disabled {
     background-color: grey;

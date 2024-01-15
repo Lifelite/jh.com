@@ -62,7 +62,7 @@ export function Parallax() {
                     <div className="button-cluster">
                         <FancyAnimatedButton id="professional-button-link" onClick={handleClick}>Professional</FancyAnimatedButton>
                         <FancyAnimatedButton id="personal-button-link" onClick={handleClick}>Personal</FancyAnimatedButton>
-                        <FancyAnimatedButton id="contact-button-link" onClick={handleClick}>Contact Me</FancyAnimatedButton>
+                        <FancyAnimatedButton id="contact-button-link" onClick={handleClick}>Contact</FancyAnimatedButton>
                     </div>
                 </ScrollInFade>
             </div>

@@ -6,49 +6,47 @@ import {TextArea} from "../components/Forms/TextArea.jsx";
 import {useRef, useState} from "react";
 import {FullPageLoader} from "../components/Loaders/FullPageLoader.jsx";
 import {PacmanLoader} from "../components/Loaders/PacmanLoader.jsx";
+import {postMessage} from "../functions/postContactFormData.js"
+import {useNavigate} from "react-router-dom";
+
+const isButtonDisabled = (name, email) => {
+    return !(name !== "" && email !== "");
+}
 
 export function Contact() {
     const [nameField, setNameField] = useState("");
     const [emailField, setEmailField] = useState("");
     const [messageField, setMessageField] = useState("")
-    const [buttonDisabled, setButtonDisabled] = useState(true);
+    const buttonDisabled = isButtonDisabled(nameField, emailField)
     const [loading, setLoading] = useState(false)
     const formRef = useRef();
     const handleEmailChange = (e) => {
         setEmailField(e.target.value)
-        handleButton()
     }
 
     const handleNameChange = (e) => {
         setNameField(e.target.value)
-        handleButton()
     }
 
     const handleMessageChange = (e) => {
         setMessageField(e.target.value)
     }
 
-    const handleButton = () => {
-        if (nameField && emailField) {
-            setButtonDisabled(false)
-        }
-        if (!nameField || !emailField) {
-            setButtonDisabled(true)
-        }
-    }
+    const navigate = useNavigate()
 
-    const handleSubmit = async (e) => {
-        setLoading(true)
-        const response = postMessage(nameField, emailField, messageField);
-        if (response.status === 201) {
-            const json = await response.json()
-            console.log(json)
-        } else {
-            const error = await response.text()
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setLoading(true);
+        try {
+            const response = postMessage(nameField, emailField, messageField);
+            console.log(JSON.stringify(response));
+        } catch (error) {
+            alert("Sorry, something broke on my end. " +
+                "Contact me on LinkedIn and let me know!  Error info:" + error);
             console.log(error)
-            alert(error)
         }
-        setLoading(false)
+        setLoading(false);
+        navigate("/thank-you")
     }
 
     const loader = () => {
@@ -66,6 +64,12 @@ export function Contact() {
             {loader()}
             <NavBar/>
             <div className="contact-form">
+                <div className="contact-title">
+                    <h2>Get in touch!</h2>
+                    <p>Drop me a message for business inquiries, feedback...</p>
+                    <p>...or maybe fan-mail?</p>
+                    <p>No? Well, one can dream.</p>
+                </div>
                 <form
                     id="contact-me-form"
                     ref={formRef}
