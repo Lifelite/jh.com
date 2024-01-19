@@ -101,3 +101,66 @@ export const handleOptionReturn = target => {
         skewY: 0
     });
 };
+
+export const handleFadeIn = target => {
+    gsap.from(target, {
+        opacity: 0,
+        duration: .8,
+        x: .1,
+        ease: "power1.in"
+    })
+    gsap.to(target, {
+        opacity: 1,
+        duration: .8,
+        x: .1,
+        ease: "power1.inOut"
+    })
+}
+
+export const handleStaggerIn = target => {
+    gsap.from(target, {
+        opacity: 0,
+        scale: 0,
+        ease: "back.out",
+        duration: .9,
+        x: .1,
+        y: .2,
+        stagger: .2,
+    })
+    gsap.to(target, {
+        opacity: 1,
+        scale: 1,
+        ease: "power5.in",
+        duration: .9,
+        x: .1,
+        y: .2,
+        stagger: .2,
+    })
+}
+
+export const handleEaseIn = target => {
+    gsap.from(target,{
+        opacity: 0,
+        right: 5,
+        x: .4,
+        duration: .9,
+        ease: "power2.out"
+    })
+    gsap.to(target, {
+        opacity: 1,
+        right: 0,
+        duration: .9,
+        ease: "power1.in",
+    })
+}
+
+export const handleStaggerTo = target => {
+    gsap.to(target, {
+        top: 0,
+        duration: .9,
+        stagger: .2,
+        x: .1,
+        y: .9,
+        ease: "back.out",
+    })
+}

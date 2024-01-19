@@ -1,7 +1,7 @@
 import {useRef, useEffect} from "react";
 import {gsap} from "gsap";
 import {Link} from "react-router-dom";
-import "../styles/NavBar.scss"
+import "../../../styles/NavBar.scss"
 
 import {
     staggerText,
@@ -12,13 +12,13 @@ import {
     handleOptionReturn,
     handleOption,
     staggerRevealClose
-} from "../functions/animations.js";
+} from "../../../functions/animations.js";
 
-import blog from "../images/blog.jpeg";
-import linkedin from "../images/linkedin.jpeg";
-import github from "../images/github.jpeg";
-import partytime from "../images/partytime.jpeg";
-import admin from "../images/admin.webp";
+import blog from "../../../images/blog.jpeg";
+import linkedin from "../../../images/linkedin.jpeg";
+import github from "../../../images/github.jpeg";
+import partytime from "../../../images/partytime.jpeg";
+import admin from "../../../images/admin.webp";
 import PropTypes from "prop-types";
 
 const other = [

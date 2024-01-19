@@ -1,5 +1,5 @@
 import {BasicButton} from "../components/Buttons/BasicButton.jsx";
-import NavBar from "../components/NavBar.jsx";
+import NavBar from "../components/NavBars/FancyNav/NavBar.jsx";
 import "../styles/ThankYou.scss"
 import {useNavigate} from "react-router-dom";
 

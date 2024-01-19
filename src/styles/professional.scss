@@ -16,11 +16,11 @@ $primary-color: #ffaf1b;
       z-index: 105;
     }
 
-    }
+  }
 
-    .hamburger-menu {
-      z-index: 101;
-    }
+  .hamburger-menu {
+    z-index: 101;
+  }
 
 
   .footer-links {
@@ -59,25 +59,25 @@ $primary-color: #ffaf1b;
     justify-content: flex-start;
     align-items: center;
 
-      .professional-education-items {
+    .professional-education-items {
+      display: flex;
+      margin: 24rem 5rem;
+      background-color: #242424;
+      border-radius: 2em;
+      padding: 1em;
+
+      .professional-education-item-container {
         display: flex;
-        margin: 24rem 5rem;
-        background-color: #242424;
-        border-radius: 2em;
-        padding: 1em;
+        transform: translate(50%, 50%);
 
-        .professional-education-item-container {
-          display: flex;
-          transform: translate(50%, 50%);
+        .hover-card {
+          width: 15rem;
+          height: 15rem;
+          padding: 1rem;
 
-          .hover-card {
-            width: 15rem;
-            height: 15rem;
-            padding: 1rem;
-
-            &#card2 {
-              width: 17rem;
-            }
+          &#card2 {
+            width: 17rem;
+          }
         }
       }
     }
@@ -187,21 +187,21 @@ $primary-color: #ffaf1b;
 
 @media (max-width: 900px) {
   .professional {
-  .professional-education {
-    height: fit-content;
+    .professional-education {
+      height: fit-content;
 
-    .professional-education-items {
-      flex-direction: column;
-      flex-wrap: wrap;
-      padding: 4rem 2rem;
-      margin-top: 5rem;
+      .professional-education-items {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 4rem 2rem;
+        margin-top: 5rem;
 
+      }
+
+      #card2 {
+        width: 11rem;
+      }
     }
-
-    #card2 {
-      width: 11rem;
-    }
-  }
 
     .professional .professional-education,
     .professional-education-items .professional-education-item-container,
@@ -210,20 +210,26 @@ $primary-color: #ffaf1b;
       height: 15rem;
     }
 
-  .professional-skills {
+    .professional-skills {
+      height: fit-content;
+
+    }
+
+    .professional-portfolio {
+      height: fit-content;
+      overflow: auto;
+
+    }
+
+
+    .professional-title {
+      padding: 1rem;
+      border-radius: 0 0 25% 25%;
+    }
+
+
+  }
+  .professional-footer {
     height: fit-content;
-
   }
-
-  .professional-portfolio {
-    height: fit-content;
-    padding-bottom: 75vh;
-  }
-
-
-  .professional-title {
-    padding: 1rem;
-    border-radius: 0 0 25% 25%;
-  }
-}
 }
