@@ -16,29 +16,29 @@ const grootDialogue = [
 ];
 
 const grootImage = {
-    "groot": [
-        {"a": "     .^. .  _         "},
-        {"a": "    /: ||`\\/ \\~  ,  "},
-        {"a": "  , [   &    / \\ y'  "},
-        {"a": " {v':   `\\   / `&~-, "},
-        {"a": "'y. '    |`   .  ' /  "},
-        {"a": " \\   '  .       , y  "},
-        {"a": " v .        '     v   "},
-        {"a": " V  .~.      .~.  V   "},
-        {"a": " : (  0)    (  0) :   "},
-        {"a": "  i `'`      `'` j    "},
-        {"a": "   i     __    ,j     "},
-        {"a": "    `%`~....~'&       "},
-        {"a": " <~o' /  \\/` \\-s,   "},
-        {"a": "  o.~'.  )(  r  .o ,. "},
-        {"a": " o',  %``\\/``& : 'bF "},
-        {"a": "d', ,ri.~~-~.ri , +h  "},
-        {"a": "`oso' d`~..~`b 'sos`  "},
-        {"a": "     d`+ II +`b       "},
-        {"a": "     i_:_yi_;_y       "},
-        {"a": "______________________"},
-        {"a": "_____I_am_Groot_______"},
-    ],
+    "groot": {
+        "a": "     .^. .  _         ",
+        "b": "    /: ||`\\/ \\~  ,  ",
+        "c": "  , [   &    / \\ y'  ",
+        "d": " {v':   `\\   / `&~-, ",
+        "e": "'y. '    |`   .  ' /  ",
+        "f": " \\   '  .       , y  ",
+        "g": " v .        '     v   ",
+        "h": " V  .~.      .~.  V   ",
+        "i": " : (  0)    (  0) :   ",
+        "j": "  i `'`      `'` j    ",
+        "k": "   i     __    ,j     ",
+        "l": "    `%`~....~'&       ",
+        "m": " <~o' /  \\/` \\-s,   ",
+        "n": "  o.~'.  )(  r  .o ,. ",
+        "o": " o',  %``\\/``& : 'bF ",
+        "p": "d', ,ri.~~-~.ri , +h  ",
+        "q": "`oso' d`~..~`b 'sos`  ",
+        "r": "     d`+ II +`b       ",
+        "s": "     i_:_yi_;_y       ",
+        "t": "______________________",
+        "u": "_____I_am_Groot_______"
+    },
     "message": "Welcome to GrootAI, use a POST request with the [question] key to ask groot anything!"
 };
 
@@ -67,7 +67,7 @@ export default async function handler(request) {
             );
         }
         case 'POST': {
-            body = request.json();
+            body = await request.json();
             try {
                 answer = grootDialogue[responseNumber]
                 question = body.question;
@@ -76,8 +76,8 @@ export default async function handler(request) {
                 answer = {message: "Ask a question by using ['question':question] format in your request body."};
                 statusCode = 400;
             } finally {
-                question = (question) ? question : null;
-                answer = (answer) ? answer: null;
+                question = question ? question : null;
+                answer = answer ? answer: null;
             }
 
             return new Response(
