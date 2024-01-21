@@ -4,7 +4,7 @@ import {
     RouterProvider
 } from "react-router-dom";
 import { inject } from '@vercel/analytics';
-import router from "./functions/router.jsx";
+import router from "./routes/router.jsx";
 
 inject();
 

@@ -1,4 +1,4 @@
-import "../../styles/PacmanLoader.scss"
+import "./PacmanLoader.scss"
 
 export function PacmanLoader() {
     return (

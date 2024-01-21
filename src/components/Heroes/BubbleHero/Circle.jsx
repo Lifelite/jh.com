@@ -1,4 +1,4 @@
-import "../../../styles/HeroHeader.scss"
+import "./HeroHeader.scss"
 import {useRef} from "react";
 import PropTypes from "prop-types";
 

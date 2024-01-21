@@ -1,0 +1,20 @@
+.jukebox {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  background-color: #242424;
+  grid-template-columns: max-content max-content max-content;
+
+  gap: 32px;
+  place-content: center;
+
+  .track-time {
+    position: relative;
+
+  }
+
+  .playback {
+    display: flex;
+    justify-content: space-around;
+  }
+}

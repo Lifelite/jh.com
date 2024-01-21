@@ -1,4 +1,4 @@
-@use 'base';
+@use '../../styles/base';
 
 body {
   margin: 0;
@@ -63,40 +63,40 @@ body {
 }
 
 #starback {
-  background-image: url(../images/stars.png);
+  background-image: url(../../images/stars.png);
   background-repeat: repeat-y;
   transform:translate3d(0px,0px,-1.3px) scale(2.5);
 }
 #deathstar {
-  background-image: url(../images/deathstar.png);
+  background-image: url(../../images/deathstar.png);
   transform:translate3d(200px,-105px,-1px) scale(1.8);
 }
 #name {
-  background-image: url(../images/name.png);
+  background-image: url(../../images/name.png);
   transform:translate3d(0,0px,0.26px) scale(0.6);
   background-position: center;
 
 }
 #enterprise {
-  background-image: url(../images/enterprise.png);
+  background-image: url(../../images/enterprise.png);
   transform:translate3d(0,0px,-.9px) scale(1.5);
   background-position: left;
   max-width: 2200px;
 }
 #atlantabackground {
-  background-image: url(../images/atlantabackground.png);
+  background-image: url(../../images/atlantabackground.png);
   transform:translate3d(0px, 120px,.4px) scale(.7);
   background-repeat: repeat-x;
   max-width: 2200px;
 }
 #jeremy {
-  background-image: url(../images/jeremy.png);
+  background-image: url(../../images/jeremy.png);
   transform:translate3d(-60px,160px,.25px) scale(0.70);
   background-size: cover;
   max-width: 2200px;
 }
 #atlantaforeground {
-  background-image: url(../images/atlantaforeground.png);
+  background-image: url(../../images/atlantaforeground.png);
   transform:translate3d(0, -100px,.2px) scale(1.4);
 }
 

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import {textFieldTypes} from "./inputTypes.js";
-import "../../styles/TextField.scss"
+import "./TextField.scss"
 export function TextArea(props) {
     const {
         name,

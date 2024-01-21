@@ -26,40 +26,6 @@ export function Personal() {
                     Eventually there will be content, and it will be awesome.</p>
                 </div>
             </div>
-            <PerspectiveCarousel
-                repeat={true}
-                showBullets={true}
-                showArrows={true}
-            >
-                <CarouselSlide
-                    cardTitle="test"
-                    like={500}
-                    image={testImage}
-                    imageAlt={"yep"}
-                    likeAction={console.log("bloop")}
-                    />
-                <CarouselSlide
-                    cardTitle="test"
-                    like={500}
-                    image={testImage}
-                    imageAlt={"yep"}
-                    likeAction={console.log("bloop")}
-                />
-                <CarouselSlide
-                    cardTitle="test"
-                    like={500}
-                    image={testImage}
-                    imageAlt={"yep"}
-                    likeAction={console.log("bloop")}
-                />
-                <CarouselSlide
-                    cardTitle="test"
-                    like={500}
-                    image={testImage}
-                    imageAlt={"yep"}
-                    likeAction={console.log("bloop")}
-                />
-            </PerspectiveCarousel>
         </div>
 
     )

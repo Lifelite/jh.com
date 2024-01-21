@@ -1,7 +1,7 @@
 import {useState} from "react";
 import PropTypes from "prop-types";
 import VisibilitySensor from "react-visibility-sensor";
-import "../styles/BounceIn.scss"
+import "./BounceIn.scss"
 
 export default function BounceIn(props) {
     const {

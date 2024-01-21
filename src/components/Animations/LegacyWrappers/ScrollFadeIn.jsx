@@ -1,6 +1,6 @@
 import {useEffect, useRef, useState} from "react";
 import PropTypes from "prop-types";
-import '../styles/ScrollFadeIn.scss'
+import './ScrollFadeIn.scss'
 
 export default function ScollInFade(props) {
     const {

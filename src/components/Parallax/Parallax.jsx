@@ -1,6 +1,6 @@
-import '../../styles/Parallax.scss'
+import './Parallax.scss'
 import {TextBlock} from "./TextBlock.jsx";
-import ScrollInFade from "../ScrollFadeIn.jsx";
+import ScrollInFade from "../Animations/LegacyWrappers/ScrollFadeIn.jsx";
 import FancyAnimatedButton from "../Buttons/FancyAnimatedButton.jsx";
 import {useNavigate} from "react-router-dom";
 
