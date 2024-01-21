@@ -1,11 +1,12 @@
 import {createBrowserRouter} from "react-router-dom";
-import Root from "../routes/root.jsx";
-import ErrorPage from "../routes/error-page.jsx";
+import Root from "./root.jsx";
+import ErrorPage from "./error-page.jsx";
 import {Personal} from "../pages/Personal.jsx";
 import {Professional} from "../pages/Professional.jsx";
 import {Contact} from "../pages/Contact.jsx";
 import * as React from "react";
 import {ThankYou} from "../pages/ThankYou.jsx";
+import SpotifyJukebox from "../pages/SpotifyJukebox/SpotifyJukebox.jsx";
 
 const router = createBrowserRouter([
     {
@@ -39,7 +40,12 @@ const router = createBrowserRouter([
         path: "/thank-you",
         element: <ThankYou />,
         errorElement: <ErrorPage />,
-    }
+    },
+    {
+        path: "/jukebox",
+        element: <SpotifyJukebox />,
+        errorElement: <ErrorPage />,
+    },
     // {
     //     path: "/experimental",
     //     element: <Experimental />

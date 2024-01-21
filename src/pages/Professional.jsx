@@ -1,12 +1,12 @@
 import Timeline from "../components/Timeline/Timeline.jsx";
 import {TimelineEntries} from "../content/TimelineEntries.jsx";
-import "../styles/professional.scss"
+import "../styles/Professional.scss"
 import {HeroHeader} from "../components/Heroes/BubbleHero/HeroHeader.jsx";
 import neoncity from "../images/backgroundpro.jpeg"
 import {EducationEntries} from "../content/EducationEntries.jsx"
 import {HoneyComb} from "../components/HoneyComb/HoneyComb.jsx";
 import {SkillEntries} from "../content/SkillEntries.jsx";
-import {FlipCard} from "../components/FlipCard.jsx";
+import {FlipCard} from "../components/Cards/3DFlipCard/FlipCard.jsx";
 import {Link} from "react-router-dom";
 import websiteImage from "../images/websiteImage.png"
 import {Footer} from "../components/Footer/Footer.jsx";

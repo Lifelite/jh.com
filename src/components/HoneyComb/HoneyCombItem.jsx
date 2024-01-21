@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "../../styles/HoneyComb.scss"
+import "./HoneyComb.scss"
 export function HoneyCombItem(props) {
     const {
         backgroundURL,

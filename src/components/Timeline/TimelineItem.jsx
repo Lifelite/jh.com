@@ -2,7 +2,7 @@ import { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import VisibilitySensor from 'react-visibility-sensor';
-import '../../styles/TimelineItem.scss';
+import './TimelineItem.scss';
 
 class TimelineItem extends Component {
     constructor(props) {

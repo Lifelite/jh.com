@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "../../styles/Button.scss"
+import "./Button.scss"
 import {useRef} from "react";
 
 export function BasicButton(props) {

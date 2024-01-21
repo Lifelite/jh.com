@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import {PacmanLoader} from "./PacmanLoader.jsx";
-import "../../styles/FullPageLoader.scss"
+import "./FullPageLoader.scss"
 
 export const FullPageLoader = (props) => {
     const {

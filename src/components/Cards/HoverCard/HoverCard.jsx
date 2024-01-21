@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "../styles/HoverCard.scss"
+import "./HoverCard.scss"
 
 export function HoverCard(props) {
     const {

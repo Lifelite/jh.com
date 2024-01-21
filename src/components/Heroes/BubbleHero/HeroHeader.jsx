@@ -1,4 +1,4 @@
-import "../../../styles/HeroHeader.scss"
+import "./HeroHeader.scss"
 import PropTypes from "prop-types";
 import {Bubble} from "./Bubble.jsx";
 

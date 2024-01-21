@@ -1,4 +1,4 @@
-import "../../styles/Footer.scss"
+import "./Footer.scss"
 import PropTypes from "prop-types";
 import {FooterBlob} from "./FooterBlob.jsx";
 

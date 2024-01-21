@@ -1,4 +1,4 @@
-import "../styles/FlipCards.scss"
+import "./FlipCards.scss"
 import {useState} from "react";
 import PropTypes from "prop-types";
 

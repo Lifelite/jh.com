@@ -1,7 +1,8 @@
-export class Blog extends Component {
-    render() {
-        return (
-            <></>
-        )
-    }
+export default function Blog(props) {
+    const {
+        entries,
+        date,
+    } = props;
+
+
 }

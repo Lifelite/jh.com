@@ -1,7 +1,7 @@
 import {useRef, useEffect} from "react";
 import {gsap} from "gsap";
 import {Link} from "react-router-dom";
-import "../../../styles/NavBar.scss"
+import "./NavBar.scss"
 
 import {
     staggerText,

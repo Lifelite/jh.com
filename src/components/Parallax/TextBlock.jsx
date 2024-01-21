@@ -1,6 +1,6 @@
 import cx from 'classnames'
 import PropTypes from "prop-types";
-import '../../styles/TextBlock.scss'
+import './TextBlock.scss'
 export const TextBlock = (props) => {
     const {
         children,

@@ -1,4 +1,4 @@
-import "../../styles/Footer.scss"
+import "./Footer.scss"
 
 export const FooterBlob = () => {
     let size= `${2 + Math.random() * 4}rem`;

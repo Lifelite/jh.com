@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import '../../styles/Timeline.scss';
+import './Timeline.scss';
 
 const Timeline = ({ animate, children, className, lineColor }) => (
     <div className="timeline--wrapper">

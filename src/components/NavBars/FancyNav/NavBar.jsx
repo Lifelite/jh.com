@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Hamburger from "./Hamburger.jsx";
-import "../../../styles/NavBar.scss"
+import "./NavBar.scss"
 
 const NavBar = () => {
 
