@@ -104,6 +104,7 @@ function stringToMultiTap (text, shiftbutton="#") {
     return translatedString;
 }
 
+console.log(stringToMultiTap("Hey there you sexy lady!"))
 export default async function handler(request) {
     const method = request.method;
     let body;
@@ -133,13 +134,25 @@ export default async function handler(request) {
         case 'POST': {
             body = await request.json();
             message = body.message;
-            translate = body.translate.toLowerCase()
+            translate = body.translate.toLowerCase();
             if (translate === "to") {
-                translation = multiTapTextParser(message)
+                try {
+                    translation = stringToMultiTap(message);
+                    statusCode = 200;
+                } catch (e) {
+                    translation = "Invalid Request, not sure how you messed that one up, but there's a chance you found a bug!";
+                    statusCode = 400;
+                }
             } else if (translate === "from"){
-                translation = stringToMultiTap(message)
+                try {
+                    translation = multiTapTextParser(message);
+                    statusCode = 200;
+                } catch (e) {
+                    translation = "Invalid Request, Only numbers, spaces, |, and # allowed.";
+                    statusCode = 400;
+                }
             } else {
-                statusCode = 400
+                statusCode = 400;
                 return new Response(
                     JSON.stringify({
                         "error" : "Invalid [transfer] type, only use 'to' or 'from'",
@@ -153,7 +166,7 @@ export default async function handler(request) {
                     }
                 )
             }
-            statusCode = 200
+
             return new Response(
                 JSON.stringify({
                     message,
