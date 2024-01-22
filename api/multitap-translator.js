@@ -111,6 +111,8 @@ export default async function handler(request) {
     let translation;
     let message;
 
+    console.log(request)
+
     switch (method) {
         case 'GET': {
             statusCode = 200;

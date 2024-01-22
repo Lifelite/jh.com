@@ -4,6 +4,8 @@ export async function y2kParser (translate, message) {
         message,
     }
 
+    console.log(translate, message)
+
     const options = {
         method: 'POST',
         headers: {
