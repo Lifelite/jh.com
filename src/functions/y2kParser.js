@@ -14,7 +14,7 @@ export async function y2kParser (toFrom, message) {
 
     const hostname = window.location.hostname;
 
-    const apiURL = `https://${hostname}/api/contact-submit`
+    const apiURL = `https://${hostname}/api/multitap-translator`
 
     return await fetch(apiURL, options)
 }
