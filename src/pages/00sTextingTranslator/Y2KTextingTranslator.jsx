@@ -1,9 +1,9 @@
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useState} from "react";
 import {y2kParser} from "../../functions/y2kParser.js";
 import {TextArea} from "../../components/Forms/TextArea.jsx";
 import NavBar from "../../components/NavBars/FancyNav/NavBar.jsx";
 import "./Y2kTextingTranslator.scss"
-import FancyAnimatedButton from "../../components/Buttons/FancyAnimatedButton.jsx";
+
 import {BasicButton} from "../../components/Buttons/BasicButton.jsx";
 import {BasicSwitchWithText} from "../../components/Switches/BasicSwitchWithText.jsx";
 import {FullPageLoader} from "../../components/Loaders/FullPageLoader.jsx";
@@ -14,7 +14,7 @@ export const Y2KTextingTranslator = () => {
     const [message, setMessage] = useState(null);
     const [translatedValue, setTranslatedValue] = useState("");
     const [isLoading, setIsLoading] = useState(false);
-    let switchValue = useRef("To")
+    const [switchValue, setSwitchValue] = useState("to")
 
     useEffect(() => {
         if (isLoading) {
@@ -34,10 +34,10 @@ export const Y2KTextingTranslator = () => {
     }
 
     const handleSwitchChange = (e) => {
-        if (e.target.value === "To") {
-            switchValue="From"
+        if (e.target.value === "to") {
+            setSwitchValue("from")
         } else {
-            switchValue="To"
+            setSwitchValue("to")
         }
     }
 
