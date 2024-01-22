@@ -1,7 +1,7 @@
-export async function y2kParser (toFrom, message) {
+export async function y2kParser (translate, message) {
     const body = {
-        translate: toFrom,
-        message: message
+        translate,
+        message,
     }
 
     const options = {
