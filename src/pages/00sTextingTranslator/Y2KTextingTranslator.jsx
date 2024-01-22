@@ -19,7 +19,7 @@ export const Y2KTextingTranslator = () => {
     useEffect(() => {
         if (isLoading) {
             setTimeout(() => {
-                y2kParser(switchValue, message).then((response) => {
+                y2kParser(switchValue.toString(), message).then((response) => {
                     setTranslatedValue(response.translate)
                     setIsLoading(false)
                 })
