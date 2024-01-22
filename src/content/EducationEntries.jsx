@@ -3,7 +3,7 @@ import ualr from "../images/ualr.jpeg";
 import oracle from "../images/Oracle.png"
 import istqb from "../images/ISTQB.png"
 import PropTypes from "prop-types";
-import "../styles/Professional.scss";
+import "../pages/Professional/Professional.scss";
 
 export const EducationEntries = () => {
 

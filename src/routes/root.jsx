@@ -1,5 +1,5 @@
 
-import Welcome from "../pages/Welcome.jsx";
+import Welcome from "../pages/Welcome/Welcome.jsx";
 
 
 // export async function loader() {

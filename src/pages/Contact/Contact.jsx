@@ -1,12 +1,12 @@
-import "../styles/Contact.scss"
-import NavBar from "../components/NavBars/FancyNav/NavBar.jsx";
-import {BasicButton} from "../components/Buttons/BasicButton.jsx";
-import {TextField} from "../components/Forms/TextField.jsx";
-import {TextArea} from "../components/Forms/TextArea.jsx";
+import "./Contact.scss"
+import NavBar from "../../components/NavBars/FancyNav/NavBar.jsx";
+import {BasicButton} from "../../components/Buttons/BasicButton.jsx";
+import {TextField} from "../../components/Forms/TextField.jsx";
+import {TextArea} from "../../components/Forms/TextArea.jsx";
 import {useRef, useState} from "react";
-import {FullPageLoader} from "../components/Loaders/FullPageLoader.jsx";
-import {PacmanLoader} from "../components/Loaders/PacmanLoader.jsx";
-import {postMessage} from "../functions/postContactFormData.js"
+import {FullPageLoader} from "../../components/Loaders/FullPageLoader.jsx";
+import {PacmanLoader} from "../../components/Loaders/PacmanLoader.jsx";
+import {postMessage} from "../../functions/postContactFormData.js"
 import {useNavigate} from "react-router-dom";
 
 const isButtonDisabled = (name, email) => {

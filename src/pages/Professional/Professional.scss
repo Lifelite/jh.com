@@ -41,7 +41,7 @@ $primary-color: #ffaf1b;
     justify-content: inherit;
     align-content: inherit;
     align-self: center;
-    background: #1a1a1a url("../images/timelineBackground.jpeg") fixed;
+    background: #1a1a1a url("../../images/timelineBackground.jpeg") fixed;
     width: 100vw;
 
     .timeline-wrapper {
@@ -52,7 +52,7 @@ $primary-color: #ffaf1b;
   .professional-education {
     width: 100vw;
     height: 100vh;
-    background: #1a1a1a url("../images/educationBackground.jpeg") fixed;
+    background: #1a1a1a url("../../images/educationBackground.jpeg") fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -128,7 +128,7 @@ $primary-color: #ffaf1b;
     width: 100vw;
     height: fit-content;
     display: block;
-    background: #1a1a1a url("../images/skillsBackground.jpeg") fixed;
+    background: #1a1a1a url("../../images/skillsBackground.jpeg") fixed;
 
     .professional-title {
 

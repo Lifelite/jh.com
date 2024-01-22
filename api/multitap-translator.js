@@ -103,8 +103,6 @@ function stringToMultiTap (text, shiftbutton="#") {
     }
     return translatedString;
 }
-
-console.log(stringToMultiTap("Hey there you sexy lady!"))
 export default async function handler(request) {
     const method = request.method;
     let body;

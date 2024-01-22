@@ -1,0 +1,17 @@
+.y2k-parser {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  height: 94vh;
+  align-items: center;
+
+  * {
+    max-width: 1080px;
+    padding: 2rem;
+  }
+
+  .basic-text-field {
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+}
