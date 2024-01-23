@@ -55,7 +55,7 @@ export const Y2KTextingTranslator = () => {
 
     const handleButtonClick = () => {
         if (switchValue === "from"){
-            let newString = message.replace(/[^0-9 |]/g, "")
+            let newString = message.replace(/[^0-9 |#]/g, "")
             setMessage(newString)
         }
         setIsLoading(true)
