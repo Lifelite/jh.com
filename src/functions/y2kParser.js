@@ -17,6 +17,11 @@ export async function y2kParser (translate, message) {
     const apiURL = `https://${hostname}/api/multitap-translator`
 
     return await fetch(apiURL, options)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            return data;
+        })
 
 
 }
