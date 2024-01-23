@@ -17,18 +17,18 @@ export const Y2KTextingTranslator = () => {
     const [switchValue, setSwitchValue] = useState("to")
 
     useEffect(() => {
+        if (isLoading) {
+            setTimeout(() => {
+                y2kParser(switchValue.toString(), message).then((response) => {
+                    setTranslatedValue(response.message)
+                    console.log(response.message)
+                    console.log(response)
+                    setIsLoading(false)
+                })
+            }, 3000);
 
-        setTimeout(() => {
-            y2kParser(switchValue.toString(), message).then((response) => {
-                setTranslatedValue(response.message)
-                console.log(response.message)
-                console.log(response)
-                setIsLoading(false)
-            })
-        }, 3000);
 
-
-    },[isLoading])
+    }},[isLoading])
 
     const handleRequestChange = (e) => {
         let changedMessage = e.target.value;
