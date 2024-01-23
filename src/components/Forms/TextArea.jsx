@@ -11,6 +11,8 @@ export function TextArea(props) {
         isHidden,
         onChange,
         onClick,
+        isRequired,
+        value,
     } = props
     return (
         <>
@@ -24,6 +26,8 @@ export function TextArea(props) {
                 aria-label={ariaLabel}
                 disabled={isDisabled}
                 hidden={isHidden}
+                required={isRequired}
+                value={value}
             />
         </>
     )
@@ -33,6 +37,7 @@ TextArea.defaultProps = {
     isHidden: false,
     isDisabled: false,
     placeholder: "",
+    value: "",
 }
 
 TextArea.propTypes = {
@@ -49,4 +54,6 @@ TextArea.propTypes = {
     ariaLabel: PropTypes.string,
     name: PropTypes.string,
     placeholder: PropTypes.string,
+    isRequired: PropTypes.bool,
+    value: PropTypes.string,
 }

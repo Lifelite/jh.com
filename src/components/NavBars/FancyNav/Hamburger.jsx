@@ -25,7 +25,7 @@ const other = [
     {name: "Blog", image: blog, url: "/blog"},
     {name: "LinkedIn", image: linkedin, url: "https://www.linkedin.com/in/jeremyhuntsman/"},
     {name: "GitHub", image: github, url: "https://github.com/lifelite"},
-    {name: "Party Time!", image: partytime, url: "/partytime"},
+    {name: "Random Tool!", image: partytime, url: "/y2k-texting-translator"},
     {name: "Admin", image: admin, url: "/admin"}
 ];
 

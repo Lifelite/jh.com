@@ -1,7 +1,7 @@
 import {useEffect} from "react";
 import {handleStaggerTo} from "../../../functions/animations.js";
 import PropTypes from "prop-types";
-import "../../../styles/Personal.scss";
+import "../../../pages/Personal/Personal.scss";
 
 export function BasicNav(props) {
     const {
