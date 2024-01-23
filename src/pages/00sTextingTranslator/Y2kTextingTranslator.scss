@@ -17,13 +17,15 @@
   .basic-text-field {
     margin-top: 2rem;
     padding: 2rem;
+    min-height: 20%;
   }
 
   .translation {
     border: #ffaf1b solid 2px;
     max-width: 1080px;
-    min-height: 20vh;
+    min-height: 15vh;
     min-width: 80vw;
     max-height: 500px;
+    overflow: auto;
   }
 }

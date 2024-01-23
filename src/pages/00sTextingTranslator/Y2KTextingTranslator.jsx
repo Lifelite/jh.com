@@ -54,6 +54,10 @@ export const Y2KTextingTranslator = () => {
     }
 
     const handleButtonClick = () => {
+        if (switchValue === "from"){
+            let newString = switchValue.replace(/[^a-zA-Z0-9 ]/g, "")
+            setMessage(newString)
+        }
         setIsLoading(true)
     }
 
@@ -65,7 +69,8 @@ export const Y2KTextingTranslator = () => {
                 <h2>Y2k MultiTap translator</h2>
                 <p>At one point long long ago, some remember a time when you put typed texts using a special method
                     that only worked with a 9 12key phone dialer.  Those who remember can read the old code,
-                    some can&#39;t....either way this will help you! Select the dropdown to translate to or from the
+                    some can&#39;t....either way this will help you! <br /><br />
+                    Select the dropdown to translate to or from the
                     old magic code, and place your message in the field, then translate away!
                 </p>
                 <BasicSwitchWithText
