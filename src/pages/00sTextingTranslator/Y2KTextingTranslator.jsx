@@ -78,12 +78,10 @@ export const Y2KTextingTranslator = () => {
                     value={message}
                     placeholder="Message to be translated..."
                     />
-                <TextArea
-                    name="y2k-parser-response-field"
-                    id="y2k-parser-response-field"
-                    isDisabled={true}
-                    value={translatedValue}
-                />
+                <h3>Translation</h3>
+                <span className="translation">
+                    {translatedValue}
+                </span>
                 <div className="translate-button">
                     <BasicButton
                         isDisabled={!(message)}

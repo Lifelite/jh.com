@@ -10,8 +10,20 @@
     padding: 2rem;
   }
 
+  h3 {
+    padding: 1rem;
+  }
+
   .basic-text-field {
     margin-top: 2rem;
     padding: 2rem;
+  }
+
+  .translation {
+    border: #ffaf1b solid 2px;
+    max-width: 1080px;
+    min-height: 20vh;
+    min-width: 80vw;
+    max-height: 500px;
   }
 }
