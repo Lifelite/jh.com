@@ -20,9 +20,9 @@ export const Y2KTextingTranslator = () => {
         if (isLoading) {
             setTimeout(() => {
                 y2kParser(switchValue.toString(), message).then((response) => {
-                    setTranslatedValue(response.message)
-                    console.log(response.message)
-                    console.log(response)
+                    setTranslatedValue(response.body.message)
+                    console.log(response.body.message)
+                    console.log(response.body)
                     setIsLoading(false)
                 })
             }, 3000);
