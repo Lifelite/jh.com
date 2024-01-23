@@ -20,8 +20,8 @@ export const Y2KTextingTranslator = () => {
 
         setTimeout(() => {
             y2kParser(switchValue.toString(), message).then((response) => {
-                setTranslatedValue(response.translate)
-                console.log(response.translate)
+                setTranslatedValue(response.message)
+                console.log(response.message)
                 console.log(response)
                 setIsLoading(false)
             })
