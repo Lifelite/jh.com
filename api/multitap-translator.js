@@ -138,7 +138,7 @@ export default async function handler(request) {
             if (translate === "to") {
                 try {
                     translation = stringToMultiTap(message);
-                    statusCode = 200;
+                    statusCode = 201;
                 } catch (e) {
                     translation = "Invalid Request, not sure how you messed that one up, but there's a chance you found a bug!";
                     statusCode = 400;
@@ -146,7 +146,7 @@ export default async function handler(request) {
             } else if (translate === "from"){
                 try {
                     translation = multiTapTextParser(message);
-                    statusCode = 200;
+                    statusCode = 201;
                 } catch (e) {
                     translation = "Invalid Request, Only numbers, spaces, |, and # allowed.";
                     statusCode = 400;
