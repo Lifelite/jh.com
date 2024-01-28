@@ -8,6 +8,7 @@ import * as React from "react";
 import {ThankYou} from "../pages/Contact/ThankYou.jsx";
 import SpotifyJukebox from "../pages/SpotifyJukebox/SpotifyJukebox.jsx";
 import {Y2KTextingTranslator} from "../pages/00sTextingTranslator/Y2KTextingTranslator.jsx";
+import {PalWorld} from "../pages/PalWorld/PalWorld.jsx";
 
 const router = createBrowserRouter([
     {
@@ -50,6 +51,11 @@ const router = createBrowserRouter([
     {
         path: "/y2k-texting-translator",
         element: <Y2KTextingTranslator />,
+        errorElement: <ErrorPage />
+    },
+    {
+        path: "/palworld",
+        element: <PalWorld />,
         errorElement: <ErrorPage />
     }
     // {

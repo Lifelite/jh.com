@@ -1,0 +1,67 @@
+.palworld {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  color: #ffd638;
+}
+
+.palworld-form {
+  width: 80vw;
+  display: inline-grid;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  max-width: 1080px;
+
+  .accordion {
+    grid-column: 1/5;
+    margin-left: 1.5rem;
+    background-color: #0f5ccb;
+    color: white;
+    padding: 10px;
+    border-radius: 2em;
+
+    * {
+      background-color: #0f5ccb;
+      color: white;
+    }
+
+    .accordion-item .accordion-link {
+      background-color: #0f5ccb;
+
+      i .accordion-icon * {
+        color: white;
+      }
+    }
+
+    .accordion-item .accordion-answer p {
+      background-color: #0f5ccb;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  }
+
+  .palworld-form-option {
+    grid-column: 1/5;
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+
+    .range-slider-container {
+      justify-self: flex-start;
+      margin-left: 2rem;
+      width: 75%;
+      min-width: 200px;
+      max-width: 900px;
+    }
+    input[type="number"]{
+      max-width: 200px;
+      min-width: 60px;
+      justify-self: flex-end;
+      margin-left: 2rem;
+    }
+
+  }
+}
