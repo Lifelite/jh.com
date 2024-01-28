@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import "./BasicAccordion.scss"
+import {useState} from "react";
 
 export function BasicAccordionItem(props) {
     const {
@@ -8,11 +9,20 @@ export function BasicAccordionItem(props) {
         title,
     } = props;
 
+    const [slideOpen, setSlideOpen] = useState("")
+
+    const handleSlideOpen = () => {
+        if (slideOpen === "open") {
+            setSlideOpen("")
+        } else {
+            setSlideOpen("open")
+        }
+    }
 
     return (
         <>
-            <div className="accordion-item" id={id}>
-                <a className="accordion-link" href={"#" + id}>
+            <div className={"accordion-item" + ` ${slideOpen}`} id={id}>
+                <div className="accordion-link" onClick={handleSlideOpen}>
                     <div className="accordian-flex">
                         <h3>{title}</h3>
                         {/*<ul>*/}
@@ -25,7 +35,7 @@ export function BasicAccordionItem(props) {
                     </div>
                     <i className="accordian-icon ion-md-arrow-forward">+</i>
                     <i className="accordian-icon ion-md-arrow-down">-</i>
-                </a>
+                </div>
                 <div className="accordion-answer">
                     <p> {children}</p>
                 </div>

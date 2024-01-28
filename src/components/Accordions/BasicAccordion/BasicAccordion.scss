@@ -9,8 +9,8 @@
   }
 
   .accordion-item {
-    background-color: #000000;
     border-radius: .4rem;
+    margin-left: 1rem;
 
     hr {
       border: 1px solid rgba(255, 255, 255, 0.5);
@@ -68,7 +68,6 @@
       max-height: 0;
       overflow: hidden;
       position: relative;
-      background-color: #000;
       transition: max-height 650ms;
 
       p {
@@ -80,7 +79,7 @@
 
     }
 
-    &:target {
+    &.open {
       .accordion-answer {
         max-height: 20rem;
       }

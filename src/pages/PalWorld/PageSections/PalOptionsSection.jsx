@@ -11,8 +11,10 @@ export function PalOptionsSection() {
 
     return (
         <>
+            <div className="palworld-form">
+                <h2>Pal Options</h2>
         {sliderOptions.map(option => (
-            <>
+            <div className="palworld-option-section" key={option.title}>
                     <BasicAccordion>
                         <BasicAccordionItem
                             title={option.title}
@@ -37,8 +39,9 @@ export function PalOptionsSection() {
                             type={"number"}
                         />
                     </div>
-            </>
+            </div>
             ))}
-    </>
+            </div>
+            </>
     )
 }

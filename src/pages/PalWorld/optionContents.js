@@ -556,13 +556,19 @@ const FormStatesHandlers = () => {
                 value: BaseCampMaxNum,
                 description: "Defines the maximum number of base camps that can be built.",
                 handler: handleBaseCampMaxNumChange,
-                title: "Base Camp Max Number"
+                title: "Base Camp Max Number",
+                min: 0,
+                max: 10,
+                step: 1,
             },
             {
                 value: BaseCampWorkerMaxNum,
                 description: "Defines the maximum number of workers in a base camp.",
                 handler: handleBaseCampWorkerMaxNumChange,
-                title: "Base Camp Worker Max Number"
+                title: "Base Camp Worker Max Number",
+                min: 0,
+                max: 50,
+                step: 1,
             },
         ]
     }
@@ -573,37 +579,55 @@ const FormStatesHandlers = () => {
                 value: BuildObjectDamageRate,
                 description: "Adjusts the rate at which built objects take damage.",
                 handler: handleBuildObjectDamageRateChange,
-                title: "Build Object Damage Rate"
+                title: "Build Object Damage Rate",
+                min: 0.000000,
+                max: 3.000000,
+                step: .01,
             },
             {
                 value: BuildObjectDeteriorationDamageRate,
                 description: "Adjusts the rate at which built objects deteriorate.",
                 handler: handleBuildObjectDeteriorationDamageRateChange,
-                title: "Build Object Deterioration Damage Rate"
+                title: "Build Object Deterioration Damage Rate",
+                min: 0.000000,
+                max: 3.000000,
+                step: .01,
             },
             {
                 value: CollectionDropRate,
                 description: "Adjusts the drop rate of collected items.",
                 handler: handleCollectionDropRateChange,
-                title: "Collection Drop Rate"
+                title: "Collection Drop Rate",
+                min: 0.000000,
+                max: 3.000000,
+                step: .01,
             },
             {
                 value: CollectionObjectHpRate,
                 description: "Adjusts the health of collected objects.",
                 handler: handleCollectionObjectHpRateChange,
-                title: "Collection Object HP Rate"
+                title: "Collection Object HP Rate",
+                min: 0.000000,
+                max: 3.000000,
+                step: .01,
             },
             {
                 value: CollectionObjectRespawnSpeedRate,
                 description: "Adjusts the speed at which collected objects respawn.",
                 handler: handleCollectionObjectRespawnSpeedRateChange,
-                title: "Collection Object Respawn Speed Rate"
+                title: "Collection Object Respawn Speed Rate",
+                min: 0.000000,
+                max: 3.000000,
+                step: .01,
             },
             {
                 value: EnemyDropItemRate,
                 description: "Adjusts the rate at which items are dropped by defeated enemies.",
                 handler: handleEnemyDropItemRateChange,
-                title: "Enemy Drop Item Rate"
+                title: "Enemy Drop Item Rate",
+                min: 0.000000,
+                max: 3.000000,
+                step: .01,
             },
         ]
     }
@@ -614,37 +638,55 @@ const FormStatesHandlers = () => {
                 value: PlayerDamageRateAttack,
                 description: "Refine the damage done by the player.",
                 handler: handlePlayerDamageRateAttackChange,
-                title: "Player Damage Rate Attack"
+                title: "Player Damage Rate Attack",
+                min: 0.000000,
+                max: 3.000000,
+                step: .01,
             },
             {
                 value: PlayerDamageRateDefense,
                 description: "Refine the damage taken by the player.",
                 handler: handlePlayerDamageRateDefenseChange,
-                title: "Player Damage Rate Defense"
+                title: "Player Damage Rate Defense",
+                min: 0.000000,
+                max: 3.000000,
+                step: .01,
             },
             {
                 value: PlayerStomachDecreaseRate,
                 description: "Adjusts the rate of decrease in the player's stomach.",
                 handler: handlePlayerStomachDecreaseRateChange,
-                title: "Player Stomach Decrease Rate"
+                title: "Player Stomach Decrease Rate",
+                min: 0.000000,
+                max: 3.000000,
+                step: .01,
             },
             {
                 value: PlayerStaminaDecreaseRate,
                 description: "Adjusts the rate at which the player's stamina decreases.",
                 handler: handlePlayerStaminaDecreaseRateChange,
-                title: "Player Stamina Decrease Rate"
+                title: "Player Stamina Decrease Rate",
+                min: 0.000000,
+                max: 3.000000,
+                step: .01,
             },
             {
                 value: PlayerAutoHPRegeneRate,
                 description: "Adjusts the automatic regeneration rate of the player's health.",
                 handler: handlePlayerAutoHPRegeneRateChange,
-                title: "Player Auto HP Regeneration Rate"
+                title: "Player Auto HP Regeneration Rate",
+                min: 0.000000,
+                max: 3.000000,
+                step: .01,
             },
             {
                 value: PlayerAutoHpRegeneRateInSleep,
                 description: "Adjusts the automatic regeneration rate of the player's health while sleeping.",
                 handler: handlePlayerAutoHpRegeneRateInSleepChange,
-                title: "Player Auto HP Regeneration Rate In Sleep"
+                title: "Player Auto HP Regeneration Rate In Sleep",
+                min: 0.000000,
+                max: 3.000000,
+                step: .01,
             },
         ]
     }
@@ -652,34 +694,40 @@ const FormStatesHandlers = () => {
     const worldOptions = {
         sliderOptions: [
             {
-                value: Difficulty,
-                description: "Adjusts the overall difficulty of the game.",
-                handler: handleDifficultyChange,
-                title: "Difficulty"
-            },
-            {
                 value: DayTimeSpeedRate,
                 description: "Change the speed of game time during the day.",
                 handler: handleDayTimeSpeedRateChange,
-                title: "Daytime Speed Rate"
+                title: "Daytime Speed Rate",
+                min: 0.000000,
+                max: 3.000000,
+                step: .01,
             },
             {
                 value: NightTimeSpeedRate,
                 description: "Change the speed of the game time during the night.",
                 handler: handleNightTimeSpeedRateChange,
-                title: "Nighttime Speed Rate"
+                title: "Nighttime Speed Rate",
+                min: 0.000000,
+                max: 3.000000,
+                step: .01,
             },
             {
                 value: ExpRate,
                 description: "Changes the experience gain rate for players and creatures.",
                 handler: handleExpRateChange,
-                title: "Experience Rate"
+                title: "Experience Rate",
+                min: 0.000000,
+                max: 10.000000,
+                step: .01,
             },
             {
                 value: WorkSpeedRate,
                 description: "Adjusts the overall speed of work in the game.",
                 handler: handleWorkSpeedRateChange,
-                title: "Work Speed Rate"
+                title: "Work Speed Rate",
+                min: 0.000000,
+                max: 10.000000,
+                step: .01,
             },
         ],
         dropDownOptions: [
@@ -778,15 +826,21 @@ const FormStatesHandlers = () => {
         sliderOptions: [
             {
                 value: AutoResetGuildTimeNoOnlinePlayers,
-                description: "Defines the time after which guilds without online players are automatically reset.",
+                description: "Defines the time after which guilds without online players are automatically reset (in hours).",
                 handler: handleAutoResetGuildTimeNoOnlinePlayersChange,
-                title: "Auto Reset Guild Time No Online Players"
+                title: "Auto Reset Guild Time No Online Players",
+                min: 48.000000,
+                max: 730,
+                step: 1,
             },
             {
                 value: GuildPlayerMaxNum,
                 description: "Defines the maximum number of players in a guild.",
                 handler: handleGuildPlayerMaxNumChange,
-                title: "Guild Player Max Number"
+                title: "Guild Player Max Number",
+                min: 2,
+                max: 32,
+                step: 1,
             },
         ],
         checkboxOptions: [
@@ -809,33 +863,48 @@ const FormStatesHandlers = () => {
         sliderOptions: [
             {
                 value: DropItemMaxNum,
-                description: "Set the maximum number of items dropped in the game.",
+                description: "Set the maximum number of items dropped in the game. (Affects Performance",
                 handler: handleDropItemMaxNumChange,
-                title: "Drop Item Max Number"
+                title: "Drop Item Max Number",
+                min: 100,
+                max: 5000,
+                step: 100,
             },
             {
                 value: DropItemMaxNum_UNKO,
-                description: "Set the maximum number of UNKO objects dropped in the game.",
+                description: "Set the maximum number of UNKO objects dropped in the game.  No idea what this does.",
                 handler: handleDropItemMaxNum_UNKOChange,
-                title: "Drop Item Max Number UNKO"
+                title: "Drop Item Max Number UNKO",
+                min: 10,
+                max: 500,
+                step: 10,
             },
             {
                 value: DropItemAliveMaxHours,
                 description: "Set the maximum amount of time that objects remain alive after being dropped.",
                 handler: handleDropItemAliveMaxHoursChange,
-                title: "Drop Item Alive Max Hours"
+                title: "Drop Item Alive Max Hours",
+                min: .25,
+                max: 24,
+                step: .25,
             },
             {
                 value: CoopPlayerMaxNum,
                 description: "Defines the maximum number of cooperative players in a session.",
                 handler: handleCoopPlayerMaxNumChange,
-                title: "Coop Player Max Number"
+                title: "Coop Player Max Number",
+                min: 2,
+                max: 32,
+                step: 1,
             },
             {
                 value: ServerPlayerMaxNum,
                 description: "Defines the maximum number of players allowed on the server.",
                 handler: handleServerPlayerMaxNumChange,
-                title: "Server Player Max Number"
+                title: "Server Player Max Number",
+                min: 2,
+                max: 32,
+                step: 1,
             },
         ],
         checkboxOptions: [
