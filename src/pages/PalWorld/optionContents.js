@@ -810,7 +810,7 @@ const FormStatesHandlers = () => {
                 value: bIsStartLocationSelectByMap,
                 description: "Enables or disables the selection of starting locations on the map.",
                 handler: handlebIsStartLocationSelectByMapChange,
-                title: "Is Start Location Select By Map"
+                title: "Can Select Start Location By Map"
             },
             {
                 value: bExistPlayerAfterLogout,
@@ -848,13 +848,13 @@ const FormStatesHandlers = () => {
                 value: bEnableDefenseOtherGuildPlayer,
                 description: "Enables or disables the defense of players in other guilds.",
                 handler: handlebEnableDefenseOtherGuildPlayerChange,
-                title: "Enable Defense Other Guild Player"
+                title: "Enable Defense of other Guild Players"
             },
             {
                 value: bAutoResetGuildNoOnlinePlayers,
                 description: "Automatically resets guilds without online players.",
                 handler: handlebAutoResetGuildNoOnlinePlayersChange,
-                title: "Auto Reset Guild No Online Players"
+                title: "Auto Reset Guild With No Online Players"
             },
         ]
     }
@@ -912,13 +912,13 @@ const FormStatesHandlers = () => {
                 value: bActiveUNKO,
                 description: "Activates or deactivates UNKO (Nocturne Unidentified Knock-off).  No idea what this actually does",
                 handler: handlebActiveUNKOChange,
-                title: "Active UNKO"
+                title: "Active UNKO - No idea what this does."
             },
             {
                 value: bEnableNonLoginPenalty,
                 description: "Activates or deactivates penalties in case of non-connection.",
                 handler: handlebEnableNonLoginPenaltyChange,
-                title: "Enable Non-Login Penalty"
+                title: "Enable the Penalties for Non-Active Players"
             },
             {
                 value: bUseAuth,

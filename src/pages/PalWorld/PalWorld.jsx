@@ -1,10 +1,10 @@
 import "./PalWorld.scss"
-import FormStatesHandlers from "./optionContents.js";
 import {PalOptionsSection} from "./PageSections/PalOptionsSection.jsx";
 import {BaseOptionsSection} from "./PageSections/BaseOptionsSection.jsx";
 import {ItemOptionsSection} from "./PageSections/ItemOptionsSection.jsx";
 import {PlayerOptionsSection} from "./PageSections/PlayerOptionsSection.jsx";
-import {FancyCheckBox} from "../../components/CheckBoxes/FancyCheckBox/FancyCheckBox.jsx";
+import {HighlightCheckBox} from "../../components/CheckBoxes/HighlightCheckBox/HighlightCheckBox.jsx";
+
 
 export function PalWorld() {
 
@@ -29,7 +29,8 @@ export function PalWorld() {
                 <BaseOptionsSection/>
                 <ItemOptionsSection/>
                 <PlayerOptionsSection/>
-                <FancyCheckBox />
+                <HighlightCheckBox>
+                </HighlightCheckBox>
             </div>
         </>
 
