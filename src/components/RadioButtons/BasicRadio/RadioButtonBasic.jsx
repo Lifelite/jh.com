@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import "./RadioButtonBasic.scss"
-import check from "./check.png"
 import {useEffect, useState} from "react";
 
 export function RadioButtonBasic(props) {
@@ -30,7 +29,7 @@ export function RadioButtonBasic(props) {
     return (
         <div className="radio-option-wrapper">
             <button id={id} className={"radio-option-label" + classCheck} onClick={onClick} value={value}>
-                <img src={check} alt={"check"} />
+                {/*<img src={check} alt={"check"} />*/}
                 {text}
             </button>
         </div>
