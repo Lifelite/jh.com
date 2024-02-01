@@ -39,7 +39,7 @@ export function BaseOptionsSection() {
                                 type={"number"}
                             />
                         </div>
-                        <hr/>
+
                     </div>
                 ))}
             </div>
