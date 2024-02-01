@@ -66,7 +66,7 @@ export const OptionSettings = {
 import {useState} from 'react';
 
 const FormStatesHandlers = () => {
-    const [Difficulty, setDifficulty] = useState(null);
+    const [Difficulty, setDifficulty] = useState("None");
     const [DayTimeSpeedRate, setDayTimeSpeedRate] = useState(1.000000);
     const [NightTimeSpeedRate, setNightTimeSpeedRate] = useState(1.000000);
     const [ExpRate, setExpRate] = useState(1.000000);
@@ -230,27 +230,27 @@ const FormStatesHandlers = () => {
     };
 
     const handlebEnablePlayerToPlayerDamageChange = (e) => {
-        setbEnablePlayerToPlayerDamage(e.target.value);
+        setbEnablePlayerToPlayerDamage(e);
     };
 
     const handlebEnableFriendlyFireChange = (e) => {
-        setbEnableFriendlyFire(e.target.value);
+        setbEnableFriendlyFire(e);
     };
 
     const handlebEnableInvaderEnemyChange = (e) => {
-        setbEnableInvaderEnemy(e.target.value);
+        setbEnableInvaderEnemy(e);
     };
 
     const handlebActiveUNKOChange = (e) => {
-        setbActiveUNKO(e.target.value);
+        setbActiveUNKO(e);
     };
 
     const handlebEnableAimAssistPadChange = (e) => {
-        setbEnableAimAssistPad(e.target.value);
+        setbEnableAimAssistPad(e);
     };
 
     const handlebEnableAimAssistKeyboardChange = (e) => {
-        setbEnableAimAssistKeyboard(e.target.value);
+        setbEnableAimAssistKeyboard(e);
     };
 
     const handleDropItemMaxNumChange = (e) => {
@@ -274,7 +274,7 @@ const FormStatesHandlers = () => {
     };
 
     const handlebAutoResetGuildNoOnlinePlayersChange = (e) => {
-        setbAutoResetGuildNoOnlinePlayers(e.target.value);
+        setbAutoResetGuildNoOnlinePlayers(e);
     };
 
     const handleAutoResetGuildTimeNoOnlinePlayersChange = (e) => {
@@ -294,35 +294,35 @@ const FormStatesHandlers = () => {
     };
 
     const handlebIsMultiplayChange = (e) => {
-        setbIsMultiplay(e.target.value);
+        setbIsMultiplay(e);
     };
 
     const handlebIsPvPChange = (e) => {
-        setbIsPvP(e.target.value);
+        setbIsPvP(e);
     };
 
     const handlebCanPickupOtherGuildDeathPenaltyDropChange = (e) => {
-        setbCanPickupOtherGuildDeathPenaltyDrop(e.target.value);
+        setbCanPickupOtherGuildDeathPenaltyDrop(e);
     };
 
     const handlebEnableNonLoginPenaltyChange = (e) => {
-        setbEnableNonLoginPenalty(e.target.value);
+        setbEnableNonLoginPenalty(e);
     };
 
     const handlebEnableFastTravelChange = (e) => {
-        setbEnableFastTravel(e.target.value);
+        setbEnableFastTravel(e);
     };
 
     const handlebIsStartLocationSelectByMapChange = (e) => {
-        setbIsStartLocationSelectByMap(e.target.value);
+        setbIsStartLocationSelectByMap(e);
     };
 
     const handlebExistPlayerAfterLogoutChange = (e) => {
-        setbExistPlayerAfterLogout(e.target.value);
+        setbExistPlayerAfterLogout(e);
     };
 
     const handlebEnableDefenseOtherGuildPlayerChange = (e) => {
-        setbEnableDefenseOtherGuildPlayer(e.target.value);
+        setbEnableDefenseOtherGuildPlayer(e);
     };
 
     const handleCoopPlayerMaxNumChange = (e) => {
@@ -358,7 +358,7 @@ const FormStatesHandlers = () => {
     };
 
     const handleRCONEnabledChange = (e) => {
-        setRCONEnabled(e.target.value);
+        setRCONEnabled(e);
     };
 
     const handleRCONPortChange = (e) => {
@@ -760,7 +760,7 @@ const FormStatesHandlers = () => {
             },
             {
                 value: bEnableFriendlyFire,
-                description: "Enables or disables friendly fire.",
+                description: "Enables or disables friendly fire to Guild Members.",
                 handler: handlebEnableFriendlyFireChange,
                 title: "Enable Friendly Fire"
             },
@@ -991,7 +991,11 @@ const FormStatesHandlers = () => {
         ]
     }
 
-
+    const handleFormSubmit = () => {
+        let PalWorldSettings = `[/Script/Pal.PalGameWorldSettings]\n
+        OptionSettings=(Difficulty=${Difficulty},DayTimeSpeedRate=${DayTimeSpeedRate},NightTimeSpeedRate=${NightTimeSpeedRate},ExpRate=${ExpRate},PalCaptureRate=${PalCaptureRate},PalSpawnNumRate=${PalSpawnNumRate},PalDamageRateAttack=${PalDamageRateAttack},PalDamageRateDefense=${PalDamageRateDefense},PlayerDamageRateAttack=${PlayerDamageRateAttack},PlayerDamageRateDefense=${PlayerDamageRateDefense},PlayerStomachDecreaseRate=${PlayerStomachDecreaseRate},PlayerStaminaDecreaseRate=${PlayerStaminaDecreaseRate},PlayerAutoHPRegeneRate=${PlayerAutoHPRegeneRate},PlayerAutoHpRegeneRateInSleep=${PlayerAutoHpRegeneRateInSleep},PalStomachDecreaseRate=${PalStomachDecreaseRate},PalStaminaDecreaseRate=${PalStaminaDecreaseRate},PalAutoHPRegeneRate=${PalAutoHPRegeneRate},PalAutoHpRegeneRateInSleep=${PalAutoHpRegeneRateInSleep},BuildObjectDamageRate=${BuildObjectDamageRate},BuildObjectDeteriorationDamageRate=${BuildObjectDeteriorationDamageRate},CollectionDropRate=${CollectionDropRate},CollectionObjectHpRate=${CollectionObjectHpRate},CollectionObjectRespawnSpeedRate=${CollectionObjectRespawnSpeedRate},EnemyDropItemRate=${EnemyDropItemRate},DeathPenalty=${DeathPenalty},bEnablePlayerToPlayerDamage=${bEnablePlayerToPlayerDamage},bEnableFriendlyFire=${bEnableFriendlyFire},bEnableInvaderEnemy=${bEnableInvaderEnemy},bActiveUNKO=${bActiveUNKO},bEnableAimAssistPad=${bEnableAimAssistPad},bEnableAimAssistKeyboard=${bEnableAimAssistKeyboard},DropItemMaxNum=${DropItemMaxNum},DropItemMaxNum_UNKO=${DropItemMaxNum_UNKO},BaseCampMaxNum=${BaseCampMaxNum},BaseCampWorkerMaxNum=${BaseCampWorkerMaxNum},DropItemAliveMaxHours=${DropItemAliveMaxHours},bAutoResetGuildNoOnlinePlayers=${bAutoResetGuildNoOnlinePlayers},AutoResetGuildTimeNoOnlinePlayers=${AutoResetGuildTimeNoOnlinePlayers},GuildPlayerMaxNum=${GuildPlayerMaxNum},PalEggDefaultHatchingTime=${PalEggDefaultHatchingTime},WorkSpeedRate=${WorkSpeedRate},bIsMultiplay=${bIsMultiplay},bIsPvP=${bIsPvP},bCanPickupOtherGuildDeathPenaltyDrop=${bCanPickupOtherGuildDeathPenaltyDrop},bEnableNonLoginPenalty=${bEnableNonLoginPenalty},bEnableFastTravel=${bEnableFastTravel},bIsStartLocationSelectByMap=${bIsStartLocationSelectByMap},bExistPlayerAfterLogout=${bExistPlayerAfterLogout},bEnableDefenseOtherGuildPlayer=${bEnableDefenseOtherGuildPlayer},CoopPlayerMaxNum=${CoopPlayerMaxNum},ServerPlayerMaxNum=${ServerPlayerMaxNum},ServerName="${ServerName}",ServerDescription="${ServerDescription}",AdminPassword="${AdminPassword}",ServerPassword="${ServerPassword}",PublicPort=${PublicPort},PublicIP="${PublicIP}",RCONEnabled=${RCONEnabled},RCONPort=${RCONPort},Region="${Region}",bUseAuth=${bUseAuth},BanListURL="${BanListURL}")`
+        console.log(PalWorldSettings)
+    }
 
     return {
         handleCasualSettings,
@@ -1005,7 +1009,7 @@ const FormStatesHandlers = () => {
         gameplayOptions,
         guildOptions,
         serverOptions,
-
+        handleFormSubmit,
     };
 
     // return (

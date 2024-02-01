@@ -3,14 +3,20 @@ import {PalOptionsSection} from "./PageSections/PalOptionsSection.jsx";
 import {BaseOptionsSection} from "./PageSections/BaseOptionsSection.jsx";
 import {ItemOptionsSection} from "./PageSections/ItemOptionsSection.jsx";
 import {PlayerOptionsSection} from "./PageSections/PlayerOptionsSection.jsx";
-import {HighlightCheckBox} from "../../components/CheckBoxes/HighlightCheckBox/HighlightCheckBox.jsx";
+import {GamePlayOptionsSection} from "./PageSections/GamePlayOptionsSection.jsx";
+import {GuildOptionsSection} from "./PageSections/GuildOptionsSection.jsx";
+import {ServerOptionsSection} from "./PageSections/ServerOptionsSection.jsx";
+import FancyAnimatedButton from "../../components/Buttons/FancyAnimatedButton.jsx";
+import FormStatesHandlers from "./optionContents.js";
 
 
 export function PalWorld() {
+    const {handleFormSubmit} = FormStatesHandlers();
+
 
     return (
         <>
-            <div className="palworld-background" />
+            <div className="palworld-background"/>
             <div className="palworld">
                 <div className="palworld-title">
                     <h2>PalWorld Server World Configurator</h2>
@@ -29,8 +35,15 @@ export function PalWorld() {
                 <BaseOptionsSection/>
                 <ItemOptionsSection/>
                 <PlayerOptionsSection/>
-                <HighlightCheckBox>
-                </HighlightCheckBox>
+                <GamePlayOptionsSection/>
+                <GuildOptionsSection/>
+                <ServerOptionsSection/>
+                <div className="palworld-submit-button">
+                    <FancyAnimatedButton
+                        onClick={handleFormSubmit}
+                        id={"Palworld-Build-Button"}
+                    >Create .ini File</FancyAnimatedButton>
+                </div>
             </div>
         </>
 

@@ -14,6 +14,7 @@ export const EducationEntries = () => {
                 <HoverCard
                     title="Associates of Arts"
                     image={ualr}
+                    imageAlt="University of Little Rock Logo"
                     bodyText="University of Little Rock"
                     id="card1"
                 />
@@ -22,6 +23,7 @@ export const EducationEntries = () => {
                 <HoverCard
                     title="Certified Tester"
                     image={istqb}
+                    imageAlt="ISTQB Logo"
                     bodyText="ISTQB-F"
                     id="card2"
                 />
@@ -30,6 +32,7 @@ export const EducationEntries = () => {
                 <HoverCard
                     title="Oracle SQL Certified Associate"
                     image={oracle}
+                    imageAlt="Oracle SQL Certification Logo"
                     bodyText="Oracle"
                     id="card3"
                 />
