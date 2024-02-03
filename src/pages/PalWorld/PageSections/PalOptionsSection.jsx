@@ -1,11 +1,11 @@
 import "../PalWorld.scss"
-import FormStatesHandlers from "../optionContents.js";
 import {BasicAccordion} from "../../../components/Accordions/BasicAccordion/BasicAccordion.jsx";
 import {BasicAccordionItem} from "../../../components/Accordions/BasicAccordion/BasicAccordionItem.jsx";
 import {RangeSlider} from "../../../components/Sliders/RangeSlider/RangeSlider.jsx";
 import {TextField} from "../../../components/Forms/TextField.jsx";
+import {usePalWorldData} from "./PalWorldStateManager.jsx";
 export function PalOptionsSection() {
-    const {palOptions} = FormStatesHandlers();
+    const {palOptions} = usePalWorldData();
 
     const sliderOptions = palOptions.sliderOptions;
 

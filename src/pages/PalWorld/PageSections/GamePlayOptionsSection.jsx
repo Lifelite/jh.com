@@ -1,12 +1,13 @@
-import FormStatesHandlers from "../optionContents.js";
+
 import {RadioButtonBasic} from "../../../components/RadioButtons/BasicRadio/RadioButtonBasic.jsx";
 import {BasicAccordion} from "../../../components/Accordions/BasicAccordion/BasicAccordion.jsx";
 import {BasicAccordionItem} from "../../../components/Accordions/BasicAccordion/BasicAccordionItem.jsx";
 import {HighlightCheckBox} from "../../../components/CheckBoxes/HighlightCheckBox/HighlightCheckBox.jsx";
+import {usePalWorldData} from "./PalWorldStateManager.jsx";
 
 
 export function GamePlayOptionsSection() {
-    const {gameplayOptions} = FormStatesHandlers();
+    const {gameplayOptions} = usePalWorldData();
 
     const dropdownOptions = gameplayOptions.dropDownOptions[0];
     const checkBoxOptions = gameplayOptions.checkBoxOptions;

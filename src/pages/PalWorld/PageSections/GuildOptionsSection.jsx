@@ -2,12 +2,12 @@ import {BasicAccordion} from "../../../components/Accordions/BasicAccordion/Basi
 import {BasicAccordionItem} from "../../../components/Accordions/BasicAccordion/BasicAccordionItem.jsx";
 import {RangeSlider} from "../../../components/Sliders/RangeSlider/RangeSlider.jsx";
 import {TextField} from "../../../components/Forms/TextField.jsx";
-import FormStatesHandlers from "../optionContents.js";
 import {HighlightCheckBox} from "../../../components/CheckBoxes/HighlightCheckBox/HighlightCheckBox.jsx";
+import {usePalWorldData} from "./PalWorldStateManager.jsx";
 
 export function GuildOptionsSection() {
 
-    const {guildOptions} = FormStatesHandlers();
+    const {guildOptions} = usePalWorldData()
 
     const sliderOptions = guildOptions.sliderOptions;
     const checkBoxOptions = guildOptions.checkboxOptions;
