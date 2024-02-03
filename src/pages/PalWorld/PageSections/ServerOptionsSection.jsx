@@ -1,13 +1,14 @@
-import FormStatesHandlers from "../optionContents.js";
+
 import {BasicAccordion} from "../../../components/Accordions/BasicAccordion/BasicAccordion.jsx";
 import {BasicAccordionItem} from "../../../components/Accordions/BasicAccordion/BasicAccordionItem.jsx";
 import {RangeSlider} from "../../../components/Sliders/RangeSlider/RangeSlider.jsx";
 import {TextField} from "../../../components/Forms/TextField.jsx";
 import {HighlightCheckBox} from "../../../components/CheckBoxes/HighlightCheckBox/HighlightCheckBox.jsx";
+import {usePalWorldData} from "./PalWorldStateManager.jsx";
 
 
 export function ServerOptionsSection() {
-    const {serverOptions} = FormStatesHandlers();
+    const {serverOptions} = usePalWorldData();
 
     const sliderOptions = serverOptions.sliderOptions;
     const checkBoxOptions = serverOptions.checkboxOptions;
