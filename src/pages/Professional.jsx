@@ -1,16 +1,16 @@
-import Timeline from "../components/Timeline/Timeline.jsx";
-import {TimelineEntries} from "../content/TimelineEntries.jsx";
-import "../styles/professional.scss"
-import {HeroHeader} from "../components/Heroes/BubbleHero/HeroHeader.jsx";
+import Timeline from "../components/timeline/Timeline.jsx";
+import {TimelineEntries} from "./content/TimelineEntries.jsx";
+import "./styles/professional.scss"
+import {HeroHeader} from "../components/heroes/HeroHeader.jsx";
 import neoncity from "../images/backgroundpro.jpeg"
-import {EducationEntries} from "../content/EducationEntries.jsx"
-import {HoneyComb} from "../components/HoneyComb/HoneyComb.jsx";
-import {SkillEntries} from "../content/SkillEntries.jsx";
-import {FlipCard} from "../components/FlipCard.jsx";
+import {EducationEntries} from "./content/EducationEntries.jsx"
+import {HoneyComb} from "../components/honey-comb/HoneyComb.jsx";
+import {SkillEntries} from "./content/SkillEntries.jsx";
+import {FlipCard} from "../components/flip-card/FlipCard.jsx";
 import {Link} from "react-router-dom";
 import websiteImage from "../images/websiteImage.png"
-import {Footer} from "../components/Footer/Footer.jsx";
-import NavBar from "../components/NavBars/FancyNav/NavBar.jsx";
+import {Footer} from "../components/footer/Footer.jsx";
+import NavBar from "../components/navbar/NavBar.jsx";
 import voodooImage from "../images/voodooImage.jpeg"
 import battleBotImage from "../images/battlebot.jpeg"
 import dhImage from "../images/DH-Logo.png"

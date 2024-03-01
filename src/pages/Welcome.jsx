@@ -1,6 +1,6 @@
-import {Parallax} from "../components/Parallax/Parallax.jsx";
-import '../styles/WelcomePage.scss'
-import NavBar from "../components/NavBars/FancyNav/NavBar.jsx";
+import {Parallax} from "../components/parallax/Parallax.jsx";
+import './styles/WelcomePage.scss'
+import NavBar from "../components/navbar/NavBar.jsx";
 
 
 

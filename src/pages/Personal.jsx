@@ -1,9 +1,9 @@
-import NavBar from "../components/NavBars/FancyNav/NavBar.jsx";
-import "../styles/Personal.scss";
+import NavBar from "../components/navbar/NavBar.jsx";
+import "./styles/Personal.scss";
 import jeremy from "../images/me.jpg"
-import {BoxesHero} from "../components/Heroes/BoxesHero/BoxesHero.jsx";
-import {PerspectiveCarousel} from "../components/Carousels/Perspective/PerspectiveCarousel.jsx";
-import {CarouselSlide} from "../components/Carousels/Perspective/CarouselSlide.jsx";
+import {BoxesHero} from "../components/heroes/BoxesHero.jsx";
+import {PerspectiveCarousel} from "../components/carousels/PerspectiveCarousel.jsx";
+import {CarouselSlide} from "../components/carousels/CarouselSlide.jsx";
 import testImage from "../images/DH-Logo.png"
 export function Personal() {
 

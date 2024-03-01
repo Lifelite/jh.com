@@ -1,6 +1,6 @@
-import {BasicButton} from "../components/Buttons/BasicButton.jsx";
-import NavBar from "../components/NavBars/FancyNav/NavBar.jsx";
-import "../styles/ThankYou.scss"
+import {BasicButton} from "../components/buttons/BasicButton.jsx";
+import NavBar from "../components/navbar/NavBar.jsx";
+import "./styles/ThankYou.scss"
 import {useNavigate} from "react-router-dom";
 
 export function ThankYou() {
