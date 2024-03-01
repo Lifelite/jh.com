@@ -6,7 +6,7 @@ import {TextArea} from "../../components/forms/TextArea.jsx";
 import {useRef, useState} from "react";
 import {FullPageLoader} from "../../components/loaders/FullPageLoader.jsx";
 import {PacmanLoader} from "../../components/loaders/PacmanLoader.jsx";
-import {postMessage} from "../../utils/postContactFormData.js"
+import {postMessage} from "./utils/postContactFormData.js"
 import {useNavigate} from "react-router-dom";
 
 const isButtonDisabled = (name, email) => {

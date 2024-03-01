@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import './Button.scss'
+import "./styles/button.scss"
 
 export default function FancyAnimatedButton(props) {
     const {

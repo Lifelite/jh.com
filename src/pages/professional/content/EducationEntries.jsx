@@ -1,9 +1,9 @@
-import {HoverCard} from "../components/cards/HoverCard.jsx";
-import ualr from "../images/ualr.jpeg";
-import oracle from "../images/Oracle.png"
-import istqb from "../images/ISTQB.png"
+import {HoverCard} from "../../../components/cards/HoverCard.jsx";
+import ualr from "../../../images/ualr.jpeg";
+import oracle from "../../../images/Oracle.png"
+import istqb from "../../../images/ISTQB.png"
 import PropTypes from "prop-types";
-import "../pages/professional/styles/professional.scss";
+import "../styles/professional.scss";
 
 export const EducationEntries = () => {
 
