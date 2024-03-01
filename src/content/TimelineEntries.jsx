@@ -1,4 +1,4 @@
-import TimelineItem from "../components/Timeline/TimelineItem.jsx";
+import TimelineItem from "../components/timeline/TimelineItem.jsx";
 
 export const TimelineEntries = () => {
     return (

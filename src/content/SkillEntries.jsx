@@ -1,4 +1,4 @@
-import {HoneyCombItem} from "../components/HoneyComb/HoneyCombItem.jsx";
+import {HoneyCombItem} from "../components/honeycomb/HoneyCombItem.jsx";
 import Selenium_Logo from "../images/icons/Selenium_Logo.png"
 import playwrightLogo from "../images/icons/playwrightLogo.png"
 import jetbrains from "../images/icons/jetbrains.png"

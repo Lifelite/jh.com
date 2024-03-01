@@ -39,7 +39,7 @@ const grootImage = {
         "t": "______________________",
         "u": "_____I_am_Groot_______"
     },
-    "message": "Welcome to GrootAI, use a POST request with the [question] key to ask groot anything!"
+    "message": "welcome to GrootAI, use a POST request with the [question] key to ask groot anything!"
 };
 
 export default async function handler(request) {

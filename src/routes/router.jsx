@@ -1,14 +1,13 @@
 import {createBrowserRouter} from "react-router-dom";
 import Root from "./root.jsx";
 import ErrorPage from "./error-page.jsx";
-import {Personal} from "../pages/Personal/Personal.jsx";
-import {Professional} from "../pages/Professional/Professional.jsx";
-import {Contact} from "../pages/Contact/Contact.jsx";
-import * as React from "react";
-import {ThankYou} from "../pages/Contact/ThankYou.jsx";
-import SpotifyJukebox from "../pages/SpotifyJukebox/SpotifyJukebox.jsx";
-import {Y2KTextingTranslator} from "../pages/00sTextingTranslator/Y2KTextingTranslator.jsx";
-import {PalWorld} from "../pages/PalWorld/PalWorld.jsx";
+import {Personal} from "../pages/personal/Personal.jsx";
+import {Professional} from "../pages/professional/Professional.jsx";
+import {Contact} from "../pages/contact/Contact.jsx";
+import {ThankYou} from "../pages/contact/ThankYou.jsx";
+import SpotifyJukebox from "../pages/spotify-jukebox/SpotifyJukebox.jsx";
+import {Y2KTextingTranslator} from "../pages/00s-texting-translator/Y2KTextingTranslator.jsx";
+import {PalWorld} from "../pages/palworld/PalWorld.jsx";
 
 const router = createBrowserRouter([
     {
