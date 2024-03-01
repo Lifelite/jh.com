@@ -12,7 +12,7 @@ import {
     handleOptionReturn,
     handleOption,
     staggerRevealClose
-} from "../../../functions/animations.js";
+} from "./animations.js";
 
 import blog from "../../../images/blog.jpeg";
 import linkedin from "../../../images/linkedin.jpeg";

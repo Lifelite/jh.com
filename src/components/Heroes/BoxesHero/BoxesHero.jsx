@@ -1,5 +1,5 @@
 import {useEffect} from "react";
-import {handleEaseIn, handleFadeIn, handleStaggerIn} from "../../../functions/animations.js";
+import {handleEaseIn, handleFadeIn, handleStaggerIn} from "../../NavBars/FancyNav/animations.js";
 import PropTypes from "prop-types";
 import "../../../pages/Personal/Personal.scss";
 

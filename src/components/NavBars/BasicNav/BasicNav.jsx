@@ -1,5 +1,5 @@
 import {useEffect} from "react";
-import {handleStaggerTo} from "../../../functions/animations.js";
+import {handleStaggerTo} from "../FancyNav/animations.js";
 import PropTypes from "prop-types";
 import "../../../pages/Personal/Personal.scss";
 
