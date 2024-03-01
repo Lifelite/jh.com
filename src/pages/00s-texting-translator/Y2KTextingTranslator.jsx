@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {y2kParser} from "../../utils/y2kParser.js";
+import {y2kParser} from "./utils/y2kParser.js";
 import {TextArea} from "../../components/forms/TextArea.jsx";
 import NavBar from "../../components/navbars/NavBar.jsx";
 import "./styles/y2k-texting-translator.scss"

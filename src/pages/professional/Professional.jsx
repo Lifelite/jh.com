@@ -1,11 +1,11 @@
 import Timeline from "../../components/timeline/Timeline.jsx";
-import {TimelineEntries} from "../../content/TimelineEntries.jsx";
+import {TimelineEntries} from "./content/TimelineEntries.jsx";
 import "./styles/professional.scss"
 import {HeroHeader} from "../../components/heroes/HeroHeader.jsx";
 import neoncity from "../../images/backgroundpro.jpeg"
-import {EducationEntries} from "../../content/EducationEntries.jsx"
+import {EducationEntries} from "./content/EducationEntries.jsx"
 import {HoneyComb} from "../../components/honeycomb/HoneyComb.jsx";
-import {SkillEntries} from "../../content/SkillEntries.jsx";
+import {SkillEntries} from "./content/SkillEntries.jsx";
 import {FlipCard} from "../../components/cards/FlipCard.jsx";
 import {Link} from "react-router-dom";
 import websiteImage from "../../images/websiteImage.png"

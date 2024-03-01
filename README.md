@@ -13,8 +13,7 @@ It will be regularly updated, refactored, and improved as I increase my skills i
 Hosted on Vercel for the following domains/cnames: \
 https://jeremyhuntsman.com \
 https://www.jeremyhuntsman.com \
-https://jeremyhuntsman.net \
-https://www.jeremyhuntsman
+https://jeremyhuntsman.net 
 
 Build pipelines using GitHub Actions
 
@@ -34,8 +33,6 @@ Jest \
 Playwright
 
 ## TODO
-Implement React Router \
-Add contact functionality \
-Mobile Support \
+Backend API \
 Implement unit testing \
 ...and much more!
