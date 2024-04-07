@@ -6,14 +6,10 @@ import neoncity from "../../images/backgroundpro.jpeg"
 import {EducationEntries} from "./content/EducationEntries.jsx"
 import {HoneyComb} from "../../components/honeycomb/HoneyComb.jsx";
 import {SkillEntries} from "./content/SkillEntries.jsx";
-import {FlipCard} from "../../components/cards/FlipCard.jsx";
 import {Link} from "react-router-dom";
-import websiteImage from "../../images/websiteImage.png"
 import {Footer} from "../../components/footer/Footer.jsx";
 import NavBar from "../../components/navbars/NavBar.jsx";
-import voodooImage from "../../images/voodooImage.jpeg"
-import battleBotImage from "../../images/battlebot.jpeg"
-import dhImage from "../../images/DH-Logo.png"
+import {Portfolio} from "./content/Portfolio.jsx";
 
 export function Professional() {
 
@@ -63,70 +59,7 @@ export function Professional() {
                     Projects & Portfolio
                 </div>
                 <div className="professional-portfolio-items">
-                    <FlipCard
-                        cardTitle={"This Website"}
-                        frontButtonContent="Details"
-                        backButtonContent="back"
-                        frontContent="ReactJS | Sass | Vite"
-                        backLeftCornerContent={"Status: Production - Ongoing"}
-                        backRightCornerContent={<Link target="_blank" to={"https://github.com/Lifelite/jh.com"}>GitHub Repo</Link>}
-                        background={websiteImage}
-                    >
-                        Everything seen on this web, I built from scratch. Wanted a professional looking website
-                        to showcase my skills, learn while doing, and experiment ideas. <br/>
-                        <br/>
-                        What is a Quality Engineer doing building websites? I&#39;m a firm believer that you&#39;re
-                        only truly able to test something as much as you understand it, otherwise it&#39;s just educated
-                        UAT.
-                        <br/>
-                        I also very much enjoy it. It&#39;s something I do as a hobby and maybe something I&#39;ll
-                        choose to do
-                        for my career someday. I like to keep an open path, because one never knows where life will take
-                        you!
-                    </FlipCard>
-                    <FlipCard
-                        cardTitle={"Voodoo Automation Framework"}
-                        frontButtonContent="Details"
-                        backButtonContent="back"
-                        frontContent={"Playwright | Python"}
-                        backLeftCornerContent={"Status: Rebuilding"}
-                        backRightCornerContent={<Link target="_blank" to="https://github.com/Lifelite/Voodoo_Automation_Framework">Github Repo</Link>}
-                        background={voodooImage}
-                    >
-                        This is my work in progress Automation framework using Python with Playwright.
-                        It started as a learning project and I ended up using it for a variety of uses, but
-                        it needs to be updated as this was one of those &#34;POCs that turned into tech debt&#34;
-                    </FlipCard>
-                    <FlipCard
-                        cardTitle={"Discord Battle Bot"}
-                        frontButtonContent="Details"
-                        backButtonContent="back"
-                        frontContent={"Python"}
-                        backLeftCornerContent={"Status: Depreciated"}
-                        background={battleBotImage}
-                        backRightCornerContent={<Link target="_blank" to={"https://github.com/Lifelite/discordbattlebot"}>GitHub
-                            Repo</Link>}
-                    >
-                        This was a fun weekend project using Python and Discord.gg&#39;s API to build a simple character
-                        battle game for my friends in my discord server. It utilizes their API along with a cloud MySQL
-                        database allow users to create, edit, and delete their characters; as well as allowing them to
-                        start a battle that pits all the characters against each other in a tournament style battle.
-                    </FlipCard>
-                    <FlipCard
-                        cardTitle={"Gaming Community Website"}
-                        frontButtonContent="Details"
-                        backButtonContent="back"
-                        background={dhImage}
-                        frontContent={"ReactJS | MaterialUI | Vite"}
-                        backLeftCornerContent={"Status: Deployed | Updating"}
-                        backRightCornerContent={<Link target="_blank" to={"https://github.com/Lifelite/DHWebsite3"}>GitHub Repo</Link>}
-                    >
-                        Created this website for my gaming community. This was a rushed job to get it out the door for
-                        our annual secret Santa Event, but it&#39;s fully functional and was used during the event to
-                        great
-                        success! <br/>
-                        The website utilizes Auth, MySQL, Cloud Functions, Dashboards, and more.
-                    </FlipCard>
+                    <Portfolio />
                 </div>
             </div>
             <div className="professional-footer">

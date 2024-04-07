@@ -26,7 +26,7 @@ const other = [
     {name: "LinkedIn", image: linkedin, url: "https://www.linkedin.com/in/jeremyhuntsman/"},
     {name: "GitHub", image: github, url: "https://github.com/lifelite"},
     {name: "Random Tool!", image: partytime, url: "/y2k-texting-translator"},
-    {name: "Admin", image: admin, url: "/admin"}
+    {name: "Admin", image: admin, url: "https://server.jeremyhuntsman.net"}
 ];
 
 const Hamburger = (props) => {

@@ -8,6 +8,7 @@ import {ThankYou} from "../pages/contact/ThankYou.jsx";
 import SpotifyJukebox from "../pages/spotify-jukebox/SpotifyJukebox.jsx";
 import {Y2KTextingTranslator} from "../pages/00s-texting-translator/Y2KTextingTranslator.jsx";
 import {PalWorld} from "../pages/palworld/PalWorld.jsx";
+import Blog from "../pages/blog/Blog.jsx";
 
 const router = createBrowserRouter([
     {
@@ -55,6 +56,11 @@ const router = createBrowserRouter([
     {
         path: "/palworld",
         element: <PalWorld />,
+        errorElement: <ErrorPage />
+    },
+    {
+        path: "/blog",
+        element: <Blog />,
         errorElement: <ErrorPage />
     }
     // {
