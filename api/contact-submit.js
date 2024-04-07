@@ -1,24 +1,44 @@
-import {connect} from '@planetscale/database';
-
 export const config = {
     runtime: 'edge',
 };
 
-const psConfig = {
-    url: process.env['DATABASE_URL']
-}
-const conn = connect(psConfig)
+const url = process.env['HOMESERVER_URL']
+
+// const conn = connect(psConfig)
+//
+// async function dbPush (name, email, message) {
+//     return await conn.execute(
+//         `INSERT INTO jeremy_contacts (name, email, message) VALUES ('${name}', '${email}', '${message}')`
+//     );
+// }
+//
+// async function dbRead () {
+//     return await conn.execute(
+//         `SELECT * FROM jeremy_contacts`
+//     );
+// }
 
 async function dbPush (name, email, message) {
-    return await conn.execute(
-        `INSERT INTO jeremy_contacts (name, email, message) VALUES ('${name}', '${email}', '${message}')`
-    );
-}
+    const body = {
+        name,
+        email,
+        message,
+    };
 
-async function dbRead () {
-    return await conn.execute(
-        `SELECT * FROM jeremy_contacts`
-    );
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': "application/json",
+        },
+        body: JSON.stringify(body)
+    };
+
+    return await fetch (url, options)
+        .then(response => response.json())
+        .then(data => {
+            return data
+        })
+
 }
 
 export default async function handler(request) {
@@ -55,28 +75,28 @@ export default async function handler(request) {
                 },
             );
         }
-        case 'GET': {
-            try {
-                psResponse = await dbRead()
-                body = psResponse.rows
-                statusCode = 200
-            } catch (e) {
-                statusCode = 500
-                body = {e, message:"Failed to retrieve messages"}
-            }
-
-            return new Response(
-                JSON.stringify({
-                        body
-                    }),
-                {
-                    status: statusCode,
-                    headers: {
-                        'content-type': 'application/json',
-                    },
-                }
-            )
-        }
+        // case 'GET': {
+        //     try {
+        //         psResponse = await dbRead()
+        //         body = psResponse.rows
+        //         statusCode = 200
+        //     } catch (e) {
+        //         statusCode = 500
+        //         body = {e, message:"Failed to retrieve messages"}
+        //     }
+        //
+        //     return new Response(
+        //         JSON.stringify({
+        //                 body
+        //             }),
+        //         {
+        //             status: statusCode,
+        //             headers: {
+        //                 'content-type': 'application/json',
+        //             },
+        //         }
+        //     )
+        // }
         default: {
             return new Response(
                 JSON.stringify("Invalid Request"),

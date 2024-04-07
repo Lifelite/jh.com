@@ -29,9 +29,9 @@ export function FlipCard(props) {
                         <div className="flipcard-inner">
                             <h2>{cardTitle}</h2>
                             <div className="flipcard-subtext">{frontContent}</div>
-                            <button type={"button"} onClick={handleClickFlip} className="button" aria-hidden="true">
+                            <div type={"button"} onClick={handleClickFlip} className="button" aria-hidden="true">
                                 {frontButtonContent}
-                            </button>
+                            </div>
                         </div>
                     </div>
                     <div className="flipcard-back">

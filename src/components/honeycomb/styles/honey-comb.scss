@@ -252,6 +252,11 @@
     .honeycomb-item {
       width: 50%; /* = 100 / 3 */
     }
+    .honeycomb-item-link {
+        --width:100%;
+        font-size: calc(var(--width) / 1.5);
+
+    }
     .honeycomb-item:nth-child(3n+3) { /* first honeycomb of even rows */
       margin-left: 25%; /* = width of .honeycomb-item / 2  to indent even rows */
     }

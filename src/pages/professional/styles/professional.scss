@@ -167,9 +167,11 @@ $primary-color: #ffaf1b;
       margin: 0;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       height: 50vh;
       font-family: 'Montserrat', sans-serif;
     }
