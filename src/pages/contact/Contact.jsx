@@ -100,6 +100,7 @@ export function Contact() {
                         className="feedback-input"
                         placeholder="Comment"
                         onChange={handleMessageChange}
+                        value={messageField}
                     />
                     <BasicButton
                         isDisabled={buttonDisabled}
