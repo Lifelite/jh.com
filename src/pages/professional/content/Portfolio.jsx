@@ -70,7 +70,7 @@ export const Portfolio = () => {
                 create a useful, feature-rich framework.  This framework gains inspiration from other frameworks,
                 taking the best features, but enhancing them or enhancing the test writing experience.
                 Primary inspiration for building this was due to the rising need for backend or cloud infrastructure
-                testing, and how existing tools do allow for a solid test ecosystem that can blend or run different
+                testing, and how existing tools do now allow for a solid test ecosystem that can blend or run different
                 UI, Backend, or other test automation together.
             </FlipCard>
             <FlipCard
