@@ -5,6 +5,7 @@ import voodooImage from "../../../images/voodooImage.jpeg";
 import battleBotImage from "../../../images/battlebot.jpeg";
 import dhImage from "../../../images/DH-Logo.png";
 import "../styles/professional.scss"
+import {Fragment} from "react";
 
 export const Portfolio = () => {
     return (
@@ -56,19 +57,22 @@ export const Portfolio = () => {
                 | Jest | Etc.
             </FlipCard>
             <FlipCard
-                cardTitle={"Voodoo Automation Framework"}
+                cardTitle={"Storm Automation Framework"}
                 frontButtonContent="Details"
                 backButtonContent="back"
-                frontContent={"Playwright | Python"}
-                backLeftCornerContent={"Status: Rebuilding"}
+                frontContent={"Python"}
+                backLeftCornerContent={"Status: Alpha"}
                 backRightCornerContent={<Link target="_blank"
                                               to="https://github.com/Lifelite/Voodoo_Automation_Framework">Github
                     Repo</Link>}
                 background={voodooImage}
             >
-                This is my work in progress Automation framework using Python with Playwright.
-                It started as a learning project and I ended up using it for a variety of uses, but
-                it needs to be updated as this was one of those &#34;POCs that turned into tech debt&#34;
+                This is a completely custom made framework using my experience as a Quality Engineer to
+                create a useful, feature-rich framework.  This framework gains inspiration from other frameworks,
+                taking the best features, but enhancing them or enhancing the test writing experience.
+                Primary inspiration for building this was due to the rising need for backend or cloud infrastructure
+                testing, and how existing tools do allow for a solid test ecosystem that can blend or run different
+                UI, Backend, or other test automation together.
             </FlipCard>
             <FlipCard
                 cardTitle={"Discord Battle Bot"}
