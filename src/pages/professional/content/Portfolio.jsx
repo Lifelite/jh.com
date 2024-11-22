@@ -1,11 +1,10 @@
 import {FlipCard} from "../../../components/cards/FlipCard.jsx";
 import {Link} from "react-router-dom";
 import websiteImage from "../../../images/websiteImage.png";
-import voodooImage from "../../../images/voodooImage.jpeg";
+import stormImage from "../../../images/stormImage.webp";
 import battleBotImage from "../../../images/battlebot.jpeg";
 import dhImage from "../../../images/DH-Logo.png";
 import "../styles/professional.scss"
-import {Fragment} from "react";
 
 export const Portfolio = () => {
     return (
@@ -65,7 +64,7 @@ export const Portfolio = () => {
                 backRightCornerContent={<Link target="_blank"
                                               to="https://github.com/Lifelite/Voodoo_Automation_Framework">Github
                     Repo</Link>}
-                background={voodooImage}
+                background={stormImage}
             >
                 This is a completely custom made framework using my experience as a Quality Engineer to
                 create a useful, feature-rich framework.  This framework gains inspiration from other frameworks,
