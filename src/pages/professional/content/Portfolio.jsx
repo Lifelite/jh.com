@@ -62,7 +62,7 @@ export const Portfolio = () => {
                 frontContent={"Python"}
                 backLeftCornerContent={"Status: Alpha"}
                 backRightCornerContent={<Link target="_blank"
-                                              to="https://github.com/Lifelite/Voodoo_Automation_Framework">Github
+                                              to="https://github.com/Lifelite/storm_automation_framework">Github
                     Repo</Link>}
                 background={stormImage}
             >
